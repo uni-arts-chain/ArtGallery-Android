@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.gammaray">
+    package="com.artgallery">
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
@@ -45,7 +45,7 @@
     </queries>
 
     <application
-        android:name="com.gammaray.base.YunApplication"
+        android:name="com.artgallery.base.YunApplication"
         android:allowBackup="true"
         android:icon="@mipmap/icon_logo"
         android:label="@string/app_name"
@@ -54,235 +54,235 @@
         android:theme="@style/AppTheme"
         tools:replace="android:theme">
         <activity
-            android:name="com.gammaray.ui.activity.order.AuctionOrderDetailActivity"
+            android:name="com.artgallery.ui.activity.order.AuctionOrderDetailActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.AuctionRuleActivity"
+            android:name="com.artgallery.ui.activity.AuctionRuleActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.AuctionRecordsActivity"
+            android:name="com.artgallery.ui.activity.AuctionRecordsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.user.CreateAuctionOrderActivity"
+            android:name="com.artgallery.ui.activity.user.CreateAuctionOrderActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.OfferPriceListActivity"
+            android:name="com.artgallery.ui.activity.OfferPriceListActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.GoAuctionActivity"
+            android:name="com.artgallery.ui.activity.GoAuctionActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.wallet.WithdrawActivity"
+            android:name="com.artgallery.ui.activity.wallet.WithdrawActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.CashAccountActivity"
+            android:name="com.artgallery.ui.activity.CashAccountActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.ZipFileSelectActivity"
+            android:name="com.artgallery.ui.activity.ZipFileSelectActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.wallet.ImportWalletActivity"
+            android:name="com.artgallery.ui.activity.wallet.ImportWalletActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.video.VideoPlayerActivity"
+            android:name="com.artgallery.ui.activity.video.VideoPlayerActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeFullscreen" />
         <activity
-            android:name="com.gammaray.ui.activity.QrScanActivity"
+            android:name="com.artgallery.ui.activity.QrScanActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.TransferActivity"
+            android:name="com.artgallery.ui.activity.TransferActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.UserAgreementActivity"
+            android:name="com.artgallery.ui.activity.UserAgreementActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.PinCodeKtActivity"
+            android:name="com.artgallery.ui.activity.PinCodeKtActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.ETHPinCodeActivity"
+            android:name="com.artgallery.ui.activity.ETHPinCodeActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.PinCodeActivity"
+            android:name="com.artgallery.ui.activity.PinCodeActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.wallet.ExportConfirmActivity"
+            android:name="com.artgallery.ui.activity.wallet.ExportConfirmActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.x5.ExplorerWebViewActivity"
+            android:name="com.artgallery.ui.x5.ExplorerWebViewActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.wallet.ConfirmMnemonicActivity"
+            android:name="com.artgallery.ui.activity.wallet.ConfirmMnemonicActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.wallet.BackUpActivity"
+            android:name="com.artgallery.ui.activity.wallet.BackUpActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.wallet.WalletEditActivity"
+            android:name="com.artgallery.ui.activity.wallet.WalletEditActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.ShowNetBigImgActivity"
+            android:name="com.artgallery.ui.activity.ShowNetBigImgActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeFullscreen" />
         <activity
-            android:name="com.gammaray.ui.activity.ShowBigImgActivity"
+            android:name="com.artgallery.ui.activity.ShowBigImgActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeFullscreen" />
         <activity
-            android:name="com.gammaray.ui.activity.ExchangeNFTActivity"
+            android:name="com.artgallery.ui.activity.ExchangeNFTActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.AboutUsActivity"
+            android:name="com.artgallery.ui.AboutUsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.x5.WebViewActivity"
+            android:name="com.artgallery.ui.x5.WebViewActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.x5.X5WebViewActivity"
+            android:name="com.artgallery.ui.x5.X5WebViewActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.x5.X5WebViewForAliPayActivity"
+            android:name="com.artgallery.ui.x5.X5WebViewForAliPayActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.user.SellArtUnCutActivity"
+            android:name="com.artgallery.ui.activity.user.SellArtUnCutActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.NoticeInfoActivity"
+            android:name="com.artgallery.ui.activity.NoticeInfoActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.wallet.WalletSettingActivity"
+            android:name="com.artgallery.ui.activity.wallet.WalletSettingActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.art.ShowLiveActivity"
+            android:name="com.artgallery.ui.activity.art.ShowLiveActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeFullscreen" />
         <activity
-            android:name="com.gammaray.ui.activity.blindbox.BlindBoxRecordActivity"
+            android:name="com.artgallery.ui.activity.blindbox.BlindBoxRecordActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.blindbox.BlindBoxDetailActivity"
+            android:name="com.artgallery.ui.activity.blindbox.BlindBoxDetailActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.user.SellArtActivity"
+            android:name="com.artgallery.ui.activity.user.SellArtActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.user.UserHomePageActivity"
+            android:name="com.artgallery.ui.activity.user.UserHomePageActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.user.CreateOrderActivity"
+            android:name="com.artgallery.ui.activity.user.CreateOrderActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.user.CreateOrderForBlindBoxActivity"
+            android:name="com.artgallery.ui.activity.user.CreateOrderForBlindBoxActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.wallet.ExportActivity"
+            android:name="com.artgallery.ui.activity.wallet.ExportActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.SearchActivity"
+            android:name="com.artgallery.ui.activity.SearchActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.user.MyOrgnazitionListActivity"
+            android:name="com.artgallery.ui.activity.user.MyOrgnazitionListActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.user.UserDescActivity"
+            android:name="com.artgallery.ui.activity.user.UserDescActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.order.OrderDetailActivity"
+            android:name="com.artgallery.ui.activity.order.OrderDetailActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.user.UploadArtActivity"
+            android:name="com.artgallery.ui.activity.user.UploadArtActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.user.EditNickNameActivity"
+            android:name="com.artgallery.ui.activity.user.EditNickNameActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.user.MyOrgnazitionAddActivity"
+            android:name="com.artgallery.ui.activity.user.MyOrgnazitionAddActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.AdviceActivity"
+            android:name="com.artgallery.ui.activity.AdviceActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.wallet.AcountActivity"
+            android:name="com.artgallery.ui.activity.wallet.AcountActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.user.SettingsActivity"
+            android:name="com.artgallery.ui.activity.user.SettingsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.CustomerServiceActivity"
+            android:name="com.artgallery.ui.activity.CustomerServiceActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.user.MessagesActivity"
+            android:name="com.artgallery.ui.activity.user.MessagesActivity"
             android:screenOrientation="portrait" />
 
         <service
-            android:name="com.gammaray.service.PushIntentService"
+            android:name="com.artgallery.service.PushIntentService"
             android:enabled="true"
             android:exported="true"
             android:permission="android.permission.BIND_JOB_SERVICE" />
         <service
-            android:name="com.gammaray.service.MessagePushService"
+            android:name="com.artgallery.service.MessagePushService"
             android:enabled="true"
             android:exported="true"
             android:process=":pushservice" />
 
         <activity
-            android:name="com.gammaray.ui.activity.ConfirmDocumentsActivity"
+            android:name="com.artgallery.ui.activity.ConfirmDocumentsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.VerifiedActivity"
+            android:name="com.artgallery.ui.activity.VerifiedActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.user.BindPhoneActivity"
+            android:name="com.artgallery.ui.activity.user.BindPhoneActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.ResetPswStep2Activity"
+            android:name="com.artgallery.ui.activity.ResetPswStep2Activity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.ResetPswActivity"
+            android:name="com.artgallery.ui.activity.ResetPswActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.CoinWalletActivity"
+            android:name="com.artgallery.ui.activity.CoinWalletActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.LinkSearchActivity"
+            android:name="com.artgallery.ui.activity.LinkSearchActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.OrganDetailActivity"
+            android:name="com.artgallery.ui.activity.OrganDetailActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.art.ArtDetailActivity"
+            android:name="com.artgallery.ui.activity.art.ArtDetailActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.art.AuctionArtDetailActivity"
+            android:name="com.artgallery.ui.activity.art.AuctionArtDetailActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.SelectPicActivity"
+            android:name="com.artgallery.ui.activity.SelectPicActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.CertificateApplyActivity"
+            android:name="com.artgallery.ui.activity.CertificateApplyActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.ApplyCertificateActivity"
+            android:name="com.artgallery.ui.activity.ApplyCertificateActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.user.MyHomePageActivity"
+            android:name="com.artgallery.ui.activity.user.MyHomePageActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.UpdatePictureActivity"
+            android:name="com.artgallery.ui.activity.UpdatePictureActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.user.UserCenterActivity"
+            android:name="com.artgallery.ui.activity.user.UserCenterActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.LoginActivity"
+            android:name="com.artgallery.ui.activity.LoginActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.MainActivity"
+            android:name="com.artgallery.MainActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.SplashActivity"
+            android:name="com.artgallery.ui.activity.SplashActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/SplashTheme">
@@ -293,67 +293,67 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.gammaray.ui.activity.GuideActivity"
+            android:name="com.artgallery.ui.activity.GuideActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.wallet.ExportKeystoreActivity"
+            android:name="com.artgallery.ui.activity.wallet.ExportKeystoreActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.user.FollowAndFansActivity"
+            android:name="com.artgallery.ui.activity.user.FollowAndFansActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.order.SellAndBuyActivity"
+            android:name="com.artgallery.ui.activity.order.SellAndBuyActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.user.MyCollectActivity"
+            android:name="com.artgallery.ui.activity.user.MyCollectActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.WalletLinksActivity"
+            android:name="com.artgallery.ui.activity.WalletLinksActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.SelectedWalletsActivity"
+            android:name="com.artgallery.ui.activity.SelectedWalletsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.ETHImportWalletActivity"
+            android:name="com.artgallery.ui.activity.ETHImportWalletActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.WalletsDetailActivity"
+            android:name="com.artgallery.ui.activity.WalletsDetailActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.WalletExportActivity"
+            android:name="com.artgallery.ui.activity.WalletExportActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.BackUpETHMnemonicActivity"
+            android:name="com.artgallery.ui.activity.BackUpETHMnemonicActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.ExportKeyStoreActivity"
+            android:name="com.artgallery.ui.activity.ExportKeyStoreActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.DAppsListActivity"
+            android:name="com.artgallery.ui.activity.DAppsListActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.RecentlyDAppsActivity"
+            android:name="com.artgallery.ui.activity.RecentlyDAppsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.CollectedDAppsActivity"
+            android:name="com.artgallery.ui.activity.CollectedDAppsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.DAppSearchActivity"
+            android:name="com.artgallery.ui.activity.DAppSearchActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.ChainRecommendDAppsActivity"
+            android:name="com.artgallery.ui.activity.ChainRecommendDAppsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.ChainFunctionDAppsActivity"
+            android:name="com.artgallery.ui.activity.ChainFunctionDAppsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.DAppWebsActivity"
+            android:name="com.artgallery.ui.activity.DAppWebsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gammaray.ui.activity.ETHTransDetailActivity"
+            android:name="com.artgallery.ui.activity.ETHTransDetailActivity"
             android:screenOrientation="portrait" />
         <meta-data
-            android:name="com.gammaray.utils.CustomGlideModule"
+            android:name="com.artgallery.utils.CustomGlideModule"
             android:value="AppGlideModule" />
 
         <activity
@@ -376,7 +376,7 @@
             tools:replace="android:theme,screenOrientation" />
 
         <service
-            android:name="com.gammaray.service.DownLoadService"
+            android:name="com.artgallery.service.DownLoadService"
             android:exported="false" />
 
         <provider

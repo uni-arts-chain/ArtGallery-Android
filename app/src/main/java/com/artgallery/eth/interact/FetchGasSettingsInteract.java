@@ -1,0 +1,162 @@
+package com.artgallery.eth.interact;
+
+
+import androidx.lifecycle.MutableLiveData;
+
+import com.blankj.utilcode.util.LogUtils;
+import com.artgallery.eth.base.C;
+import com.artgallery.eth.entity.ConfirmationType;
+import com.artgallery.eth.entity.GasSettings;
+import com.artgallery.eth.entity.NetworkInfo;
+import com.artgallery.eth.repository.EthereumNetworkRepository;
+import com.artgallery.eth.repository.SharedPreferenceRepository;
+import com.artgallery.eth.util.BalanceUtils;
+
+import org.web3j.protocol.Web3j;
+import org.web3j.protocol.core.methods.request.Transaction;
+import org.web3j.protocol.core.methods.response.EthEstimateGas;
+import org.web3j.protocol.core.methods.response.EthGasPrice;
+import org.web3j.protocol.http.HttpService;
+
+import java.io.IOException;
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.util.concurrent.TimeUnit;
+
+import io.reactivex.Observable;
+import io.reactivex.Single;
+import io.reactivex.disposables.Disposable;
+
+import static com.artgallery.eth.base.C.GAS_LIMIT_MIN;
+import static com.artgallery.eth.base.C.GAS_PER_BYTE;
+
+public class FetchGasSettingsInteract {
+
+
+    private final EthereumNetworkRepository networkRepository;
+
+    private BigInteger cachedGasPrice;
+
+    private final MutableLiveData<BigInteger> gasPrice = new MutableLiveData<>();
+
+    private int currentChainId;
+
+    private Disposable gasSettingsDisposable;
+
+    private final static long FETCH_GAS_PRICE_INTERVAL = 60;
+
+    public FetchGasSettingsInteract(SharedPreferenceRepository repository, EthereumNetworkRepository networkRepository) {
+        this.networkRepository = networkRepository;
+
+        this.currentChainId = networkRepository.getEthNetWork().chainId;
+
+        cachedGasPrice = new BigInteger("0");
+
+        gasSettingsDisposable = Observable.interval(0, FETCH_GAS_PRICE_INTERVAL, TimeUnit.SECONDS)
+                .doOnNext(l ->
+                        fetchGasPriceByWeb3()
+                ).subscribe();
+    }
+
+    public void clean() {
+        gasSettingsDisposable.dispose();
+    }
+
+
+    public MutableLiveData<BigInteger> gasPriceUpdate() {
+        return gasPrice;
+    }
+
+    public Single<GasSettings> fetch(ConfirmationType type,BigInteger initGasLimit) {
+
+        return Single.fromCallable(() -> {
+            BigInteger gasLimit = new BigInteger(C.DEFAULT_GAS_LIMIT);
+            if (type == ConfirmationType.ETH) {
+                gasLimit = initGasLimit;
+            } else if (type == ConfirmationType.ERC20) {
+                gasLimit = new BigInteger(C.DEFAULT_GAS_LIMIT_FOR_TOKENS);
+            }
+            return new GasSettings(cachedGasPrice, gasLimit);
+        });
+
+//        return repository.getGasSettings(forTokenTransfer);
+    }
+
+    public Single<GasSettings> fetch(byte[] transactionBytes, boolean isNonFungible) {
+        return getGasSettings(transactionBytes, isNonFungible);
+    }
+
+    private void fetchGasPriceByWeb3() {
+        LogUtils.d("fetchGasPriceByWeb3 start");
+        final Web3j web3j = Web3j.build(new HttpService(networkRepository.getEthNetWork().rpcServerUrl));
+        try {
+            EthGasPrice price = web3j
+                    .ethGasPrice()
+                    .send();
+            if (price.getGasPrice().compareTo(BalanceUtils.gweiToWei(BigDecimal.ONE)) >= 0) {
+                cachedGasPrice = price.getGasPrice();
+                LogUtils.d("FetchGasSettingsInteract", "web3 price:" + price.getGasPrice());
+                gasPrice.postValue(cachedGasPrice);
+            } else if (networkRepository.getDefaultNetwork().chainId != currentChainId) {
+                //didn't update the current price correctly, switch to default:
+                cachedGasPrice = new BigInteger(C.DEFAULT_GAS_PRICE);
+                this.currentChainId = networkRepository.getDefaultNetwork().chainId;
+            }
+        } catch (Exception ex) {
+            // silently
+        }
+    }
+
+    public Single<GasSettings> getGasSettings(byte[] transactionBytes, boolean isNonFungible) {
+        return Single.fromCallable(() -> {
+            BigInteger gasLimit = new BigInteger(C.DEFAULT_GAS_LIMIT);
+            if (transactionBytes != null) {
+                if (isNonFungible) {
+                    gasLimit = new BigInteger(C.DEFAULT_GAS_LIMIT_FOR_NONFUNGIBLE_TOKENS);
+                } else {
+                    gasLimit = new BigInteger(C.DEFAULT_GAS_LIMIT_FOR_TOKENS);
+                }
+                BigInteger estimate = estimateGasLimit(transactionBytes);
+                if (estimate.compareTo(gasLimit) > 0) gasLimit = estimate;
+            }
+            return new GasSettings(cachedGasPrice, gasLimit);
+        });
+    }
+
+    public Single<GasSettings> fetchDefault(boolean tokenTransfer, NetworkInfo networkInfo) {
+        return Single.fromCallable(() -> {
+            BigInteger gasPrice = new BigInteger(C.DEFAULT_GAS_PRICE);
+            BigInteger gasLimit = new BigInteger(C.DEFAULT_GAS_LIMIT);
+            if (tokenTransfer) {
+                gasLimit = new BigInteger(C.DEFAULT_GAS_LIMIT_FOR_TOKENS);
+            }
+            return new GasSettings(gasPrice, gasLimit);
+        });
+    }
+
+    private BigInteger estimateGasLimit(byte[] data) {
+        BigInteger roundingFactor = BigInteger.valueOf(10000);
+        BigInteger txMin = BigInteger.valueOf(GAS_LIMIT_MIN);
+        BigInteger bytePrice = BigInteger.valueOf(GAS_PER_BYTE);
+        BigInteger dataLength = BigInteger.valueOf(data.length);
+        BigInteger estimate = bytePrice.multiply(dataLength).add(txMin);
+        estimate = estimate.divide(roundingFactor).add(BigInteger.ONE).multiply(roundingFactor);
+        return estimate;
+    }
+
+    public Single<BigInteger> getTransactionGasLimit(Transaction transaction) {
+        return Single.fromCallable(() -> {
+            final Web3j web3j = Web3j.build(new HttpService(networkRepository.getEthNetWork().rpcServerUrl));
+            try {
+                EthEstimateGas ethEstimateGas = web3j.ethEstimateGas(transaction).send();
+                if (ethEstimateGas.hasError()) {
+                    throw new RuntimeException(ethEstimateGas.getError().getMessage());
+                }
+                return ethEstimateGas.getAmountUsed();
+            } catch (IOException e) {
+                throw new RuntimeException("net error");
+            }
+        });
+    }
+
+}

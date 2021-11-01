@@ -2,199 +2,37 @@
   {
     "level": "INFO",
     "message": "Start JSON generation. Platform version: 23 min SDK version: arm64-v8a",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
+    "file": "/Users/benshuai/StudioProjects/ArtGallery-Android/app/CMakeLists.txt",
     "tag": "debug|arm64-v8a"
   },
   {
     "level": "INFO",
     "message": "Trying to locate CMake in local SDK repository.",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "Parsing /Users/benshuai/Library/Android/sdk/build-tools/27.0.3/package.xml",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "Parsing /Users/benshuai/Library/Android/sdk/build-tools/28.0.2/package.xml",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "Parsing /Users/benshuai/Library/Android/sdk/build-tools/28.0.3/package.xml",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "Parsing /Users/benshuai/Library/Android/sdk/build-tools/29.0.2/package.xml",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "Parsing /Users/benshuai/Library/Android/sdk/build-tools/29.0.3/package.xml",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "Parsing /Users/benshuai/Library/Android/sdk/build-tools/30.0.1/package.xml",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "Parsing /Users/benshuai/Library/Android/sdk/build-tools/30.0.2/package.xml",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "Parsing /Users/benshuai/Library/Android/sdk/build-tools/30.0.3/package.xml",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "Parsing /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/package.xml",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "Parsing /Users/benshuai/Library/Android/sdk/cmake/3.6.4111459/package.xml",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "Parsing /Users/benshuai/Library/Android/sdk/emulator/package.xml",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "Parsing /Users/benshuai/Library/Android/sdk/extras/intel/Hardware_Accelerated_Execution_Manager/package.xml",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "Parsing /Users/benshuai/Library/Android/sdk/ndk-bundle/package.xml",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "Parsing /Users/benshuai/Library/Android/sdk/ndk/20.0.5594570/package.xml",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "Parsing /Users/benshuai/Library/Android/sdk/ndk/21.0.6113669/package.xml",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "Parsing /Users/benshuai/Library/Android/sdk/patcher/v4/package.xml",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "Parsing /Users/benshuai/Library/Android/sdk/platform-tools/package.xml",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "Parsing /Users/benshuai/Library/Android/sdk/platforms/android-25/package.xml",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "Parsing /Users/benshuai/Library/Android/sdk/platforms/android-26/package.xml",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "Parsing /Users/benshuai/Library/Android/sdk/platforms/android-27/package.xml",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "Parsing /Users/benshuai/Library/Android/sdk/platforms/android-28/package.xml",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "Parsing /Users/benshuai/Library/Android/sdk/platforms/android-29/package.xml",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "Parsing /Users/benshuai/Library/Android/sdk/platforms/android-30/package.xml",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "Parsing /Users/benshuai/Library/Android/sdk/platforms/android-31/package.xml",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "Parsing /Users/benshuai/Library/Android/sdk/sources/android-30/package.xml",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "Parsing /Users/benshuai/Library/Android/sdk/system-images/android-30/google_apis/x86/package.xml",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "Parsing /Users/benshuai/Library/Android/sdk/tools/package.xml",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
+    "file": "/Users/benshuai/StudioProjects/ArtGallery-Android/app/CMakeLists.txt",
     "tag": "debug|arm64-v8a"
   },
   {
     "level": "INFO",
     "message": "- CMake found in SDK at \u0027/Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404\u0027 had version \u00273.10.2\u0027",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
+    "file": "/Users/benshuai/StudioProjects/ArtGallery-Android/app/CMakeLists.txt",
     "tag": "debug|arm64-v8a"
   },
   {
     "level": "INFO",
     "message": "CMake \u00273.6.0\u0027 found in SDK did not match requested version \u00273.10.2\u0027.",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
+    "file": "/Users/benshuai/StudioProjects/ArtGallery-Android/app/CMakeLists.txt",
     "tag": "debug|arm64-v8a"
   },
   {
     "level": "INFO",
-    "message": "JSON \u0027/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/arm64-v8a/android_gradle_build.json\u0027 was up-to-date",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
+    "message": "JSON \u0027/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/arm64-v8a/android_gradle_build.json\u0027 was up-to-date",
+    "file": "/Users/benshuai/StudioProjects/ArtGallery-Android/app/CMakeLists.txt",
     "tag": "debug|arm64-v8a"
   },
   {
     "level": "INFO",
     "message": "JSON generation completed without problems",
-    "file": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
+    "file": "/Users/benshuai/StudioProjects/ArtGallery-Android/app/CMakeLists.txt",
     "tag": "debug|arm64-v8a"
   }
 ]

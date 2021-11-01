@@ -34,7 +34,7 @@ include rules.ninja
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/benshuai/StudioProjects/uni-arts-app-Android/app -B/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a
+  COMMAND = cd /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/benshuai/StudioProjects/ArtGallery-Android/app -B/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -44,7 +44,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 build edit_cache: phony CMakeFiles/edit_cache.util
@@ -60,77 +60,77 @@ build CMakeFiles/Demo.dir/src/main/cpp/JniBridgeC.cpp.o: CXX_COMPILER__Demo ../.
   DEFINES = -DCSM_TARGET_ANDROID_ES2 -DDemo_EXPORTS
   DEP_FILE = CMakeFiles/Demo.dir/src/main/cpp/JniBridgeC.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I../../../../../CubismSdkForNative-4-r.2/Samples/OpenGL/thirdParty/stb -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -isystem ../../../../../CubismSdkForNative-4-r.2/Core/include
+  INCLUDES = -I../../../../../CubismSdkForNative-4-r.2/Samples/OpenGL/thirdParty/stb -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -isystem ../../../../../CubismSdkForNative-4-r.2/Core/include
   OBJECT_DIR = CMakeFiles/Demo.dir
   OBJECT_FILE_DIR = CMakeFiles/Demo.dir/src/main/cpp
 build CMakeFiles/Demo.dir/src/main/cpp/LAppAllocator.cpp.o: CXX_COMPILER__Demo ../../../../src/main/cpp/LAppAllocator.cpp || cmake_object_order_depends_target_Demo
   DEFINES = -DCSM_TARGET_ANDROID_ES2 -DDemo_EXPORTS
   DEP_FILE = CMakeFiles/Demo.dir/src/main/cpp/LAppAllocator.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I../../../../../CubismSdkForNative-4-r.2/Samples/OpenGL/thirdParty/stb -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -isystem ../../../../../CubismSdkForNative-4-r.2/Core/include
+  INCLUDES = -I../../../../../CubismSdkForNative-4-r.2/Samples/OpenGL/thirdParty/stb -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -isystem ../../../../../CubismSdkForNative-4-r.2/Core/include
   OBJECT_DIR = CMakeFiles/Demo.dir
   OBJECT_FILE_DIR = CMakeFiles/Demo.dir/src/main/cpp
 build CMakeFiles/Demo.dir/src/main/cpp/LAppDefine.cpp.o: CXX_COMPILER__Demo ../../../../src/main/cpp/LAppDefine.cpp || cmake_object_order_depends_target_Demo
   DEFINES = -DCSM_TARGET_ANDROID_ES2 -DDemo_EXPORTS
   DEP_FILE = CMakeFiles/Demo.dir/src/main/cpp/LAppDefine.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I../../../../../CubismSdkForNative-4-r.2/Samples/OpenGL/thirdParty/stb -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -isystem ../../../../../CubismSdkForNative-4-r.2/Core/include
+  INCLUDES = -I../../../../../CubismSdkForNative-4-r.2/Samples/OpenGL/thirdParty/stb -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -isystem ../../../../../CubismSdkForNative-4-r.2/Core/include
   OBJECT_DIR = CMakeFiles/Demo.dir
   OBJECT_FILE_DIR = CMakeFiles/Demo.dir/src/main/cpp
 build CMakeFiles/Demo.dir/src/main/cpp/LAppDelegate.cpp.o: CXX_COMPILER__Demo ../../../../src/main/cpp/LAppDelegate.cpp || cmake_object_order_depends_target_Demo
   DEFINES = -DCSM_TARGET_ANDROID_ES2 -DDemo_EXPORTS
   DEP_FILE = CMakeFiles/Demo.dir/src/main/cpp/LAppDelegate.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I../../../../../CubismSdkForNative-4-r.2/Samples/OpenGL/thirdParty/stb -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -isystem ../../../../../CubismSdkForNative-4-r.2/Core/include
+  INCLUDES = -I../../../../../CubismSdkForNative-4-r.2/Samples/OpenGL/thirdParty/stb -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -isystem ../../../../../CubismSdkForNative-4-r.2/Core/include
   OBJECT_DIR = CMakeFiles/Demo.dir
   OBJECT_FILE_DIR = CMakeFiles/Demo.dir/src/main/cpp
 build CMakeFiles/Demo.dir/src/main/cpp/LAppLive2DManager.cpp.o: CXX_COMPILER__Demo ../../../../src/main/cpp/LAppLive2DManager.cpp || cmake_object_order_depends_target_Demo
   DEFINES = -DCSM_TARGET_ANDROID_ES2 -DDemo_EXPORTS
   DEP_FILE = CMakeFiles/Demo.dir/src/main/cpp/LAppLive2DManager.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I../../../../../CubismSdkForNative-4-r.2/Samples/OpenGL/thirdParty/stb -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -isystem ../../../../../CubismSdkForNative-4-r.2/Core/include
+  INCLUDES = -I../../../../../CubismSdkForNative-4-r.2/Samples/OpenGL/thirdParty/stb -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -isystem ../../../../../CubismSdkForNative-4-r.2/Core/include
   OBJECT_DIR = CMakeFiles/Demo.dir
   OBJECT_FILE_DIR = CMakeFiles/Demo.dir/src/main/cpp
 build CMakeFiles/Demo.dir/src/main/cpp/LAppModel.cpp.o: CXX_COMPILER__Demo ../../../../src/main/cpp/LAppModel.cpp || cmake_object_order_depends_target_Demo
   DEFINES = -DCSM_TARGET_ANDROID_ES2 -DDemo_EXPORTS
   DEP_FILE = CMakeFiles/Demo.dir/src/main/cpp/LAppModel.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I../../../../../CubismSdkForNative-4-r.2/Samples/OpenGL/thirdParty/stb -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -isystem ../../../../../CubismSdkForNative-4-r.2/Core/include
+  INCLUDES = -I../../../../../CubismSdkForNative-4-r.2/Samples/OpenGL/thirdParty/stb -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -isystem ../../../../../CubismSdkForNative-4-r.2/Core/include
   OBJECT_DIR = CMakeFiles/Demo.dir
   OBJECT_FILE_DIR = CMakeFiles/Demo.dir/src/main/cpp
 build CMakeFiles/Demo.dir/src/main/cpp/LAppPal.cpp.o: CXX_COMPILER__Demo ../../../../src/main/cpp/LAppPal.cpp || cmake_object_order_depends_target_Demo
   DEFINES = -DCSM_TARGET_ANDROID_ES2 -DDemo_EXPORTS
   DEP_FILE = CMakeFiles/Demo.dir/src/main/cpp/LAppPal.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I../../../../../CubismSdkForNative-4-r.2/Samples/OpenGL/thirdParty/stb -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -isystem ../../../../../CubismSdkForNative-4-r.2/Core/include
+  INCLUDES = -I../../../../../CubismSdkForNative-4-r.2/Samples/OpenGL/thirdParty/stb -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -isystem ../../../../../CubismSdkForNative-4-r.2/Core/include
   OBJECT_DIR = CMakeFiles/Demo.dir
   OBJECT_FILE_DIR = CMakeFiles/Demo.dir/src/main/cpp
 build CMakeFiles/Demo.dir/src/main/cpp/LAppSprite.cpp.o: CXX_COMPILER__Demo ../../../../src/main/cpp/LAppSprite.cpp || cmake_object_order_depends_target_Demo
   DEFINES = -DCSM_TARGET_ANDROID_ES2 -DDemo_EXPORTS
   DEP_FILE = CMakeFiles/Demo.dir/src/main/cpp/LAppSprite.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I../../../../../CubismSdkForNative-4-r.2/Samples/OpenGL/thirdParty/stb -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -isystem ../../../../../CubismSdkForNative-4-r.2/Core/include
+  INCLUDES = -I../../../../../CubismSdkForNative-4-r.2/Samples/OpenGL/thirdParty/stb -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -isystem ../../../../../CubismSdkForNative-4-r.2/Core/include
   OBJECT_DIR = CMakeFiles/Demo.dir
   OBJECT_FILE_DIR = CMakeFiles/Demo.dir/src/main/cpp
 build CMakeFiles/Demo.dir/src/main/cpp/LAppTextureManager.cpp.o: CXX_COMPILER__Demo ../../../../src/main/cpp/LAppTextureManager.cpp || cmake_object_order_depends_target_Demo
   DEFINES = -DCSM_TARGET_ANDROID_ES2 -DDemo_EXPORTS
   DEP_FILE = CMakeFiles/Demo.dir/src/main/cpp/LAppTextureManager.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I../../../../../CubismSdkForNative-4-r.2/Samples/OpenGL/thirdParty/stb -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -isystem ../../../../../CubismSdkForNative-4-r.2/Core/include
+  INCLUDES = -I../../../../../CubismSdkForNative-4-r.2/Samples/OpenGL/thirdParty/stb -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -isystem ../../../../../CubismSdkForNative-4-r.2/Core/include
   OBJECT_DIR = CMakeFiles/Demo.dir
   OBJECT_FILE_DIR = CMakeFiles/Demo.dir/src/main/cpp
 build CMakeFiles/Demo.dir/src/main/cpp/LAppView.cpp.o: CXX_COMPILER__Demo ../../../../src/main/cpp/LAppView.cpp || cmake_object_order_depends_target_Demo
   DEFINES = -DCSM_TARGET_ANDROID_ES2 -DDemo_EXPORTS
   DEP_FILE = CMakeFiles/Demo.dir/src/main/cpp/LAppView.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I../../../../../CubismSdkForNative-4-r.2/Samples/OpenGL/thirdParty/stb -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -isystem ../../../../../CubismSdkForNative-4-r.2/Core/include
+  INCLUDES = -I../../../../../CubismSdkForNative-4-r.2/Samples/OpenGL/thirdParty/stb -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -isystem ../../../../../CubismSdkForNative-4-r.2/Core/include
   OBJECT_DIR = CMakeFiles/Demo.dir
   OBJECT_FILE_DIR = CMakeFiles/Demo.dir/src/main/cpp
 build CMakeFiles/Demo.dir/src/main/cpp/TouchManager.cpp.o: CXX_COMPILER__Demo ../../../../src/main/cpp/TouchManager.cpp || cmake_object_order_depends_target_Demo
   DEFINES = -DCSM_TARGET_ANDROID_ES2 -DDemo_EXPORTS
   DEP_FILE = CMakeFiles/Demo.dir/src/main/cpp/TouchManager.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I../../../../../CubismSdkForNative-4-r.2/Samples/OpenGL/thirdParty/stb -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -isystem ../../../../../CubismSdkForNative-4-r.2/Core/include
+  INCLUDES = -I../../../../../CubismSdkForNative-4-r.2/Samples/OpenGL/thirdParty/stb -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -isystem ../../../../../CubismSdkForNative-4-r.2/Core/include
   OBJECT_DIR = CMakeFiles/Demo.dir
   OBJECT_FILE_DIR = CMakeFiles/Demo.dir/src/main/cpp
 
@@ -154,7 +154,7 @@ build ../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libDemo.so: CX
   TARGET_PDB = Demo.so.dbg
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt
+# /Users/benshuai/StudioProjects/ArtGallery-Android/app/CMakeLists.txt
 # =============================================================================
 
 
@@ -162,7 +162,7 @@ build ../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libDemo.so: CX
 # Utility command for rebuild_cache
 
 build Framework/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/benshuai/StudioProjects/uni-arts-app-Android/app -B/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a
+  COMMAND = cd /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/benshuai/StudioProjects/ArtGallery-Android/app -B/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -172,7 +172,7 @@ build Framework/rebuild_cache: phony Framework/CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build Framework/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 build Framework/edit_cache: phony Framework/CMakeFiles/edit_cache.util
@@ -184,263 +184,263 @@ build Framework/edit_cache: phony Framework/CMakeFiles/edit_cache.util
 # Order-only phony target for Framework
 
 build cmake_object_order_depends_target_Framework: phony
-build Framework/CMakeFiles/Framework.dir/src/CubismCdiJson.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/CubismCdiJson.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/CubismCdiJson.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/CubismCdiJson.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/CubismCdiJson.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src
-build Framework/CMakeFiles/Framework.dir/src/CubismDefaultParameterId.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/CubismDefaultParameterId.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/CubismDefaultParameterId.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/CubismDefaultParameterId.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/CubismDefaultParameterId.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src
-build Framework/CMakeFiles/Framework.dir/src/CubismFramework.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/CubismFramework.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/CubismFramework.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/CubismFramework.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/CubismFramework.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src
-build Framework/CMakeFiles/Framework.dir/src/CubismModelSettingJson.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/CubismModelSettingJson.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/CubismModelSettingJson.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/CubismModelSettingJson.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/CubismModelSettingJson.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src
-build Framework/CMakeFiles/Framework.dir/src/Effect/CubismBreath.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Effect/CubismBreath.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Effect/CubismBreath.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Effect/CubismBreath.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Effect/CubismBreath.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Effect
-build Framework/CMakeFiles/Framework.dir/src/Effect/CubismEyeBlink.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Effect/CubismEyeBlink.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Effect/CubismEyeBlink.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Effect/CubismEyeBlink.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Effect/CubismEyeBlink.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Effect
-build Framework/CMakeFiles/Framework.dir/src/Effect/CubismPose.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Effect/CubismPose.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Effect/CubismPose.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Effect/CubismPose.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Effect/CubismPose.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Effect
-build Framework/CMakeFiles/Framework.dir/src/Id/CubismId.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Id/CubismId.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Id/CubismId.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Id/CubismId.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Id/CubismId.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Id
-build Framework/CMakeFiles/Framework.dir/src/Id/CubismIdManager.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Id/CubismIdManager.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Id/CubismIdManager.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Id/CubismIdManager.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Id/CubismIdManager.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Id
-build Framework/CMakeFiles/Framework.dir/src/Math/CubismMath.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Math/CubismMath.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Math/CubismMath.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Math/CubismMath.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Math/CubismMath.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Math
-build Framework/CMakeFiles/Framework.dir/src/Math/CubismMatrix44.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Math/CubismMatrix44.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Math/CubismMatrix44.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Math/CubismMatrix44.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Math/CubismMatrix44.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Math
-build Framework/CMakeFiles/Framework.dir/src/Math/CubismModelMatrix.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Math/CubismModelMatrix.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Math/CubismModelMatrix.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Math/CubismModelMatrix.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Math/CubismModelMatrix.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Math
-build Framework/CMakeFiles/Framework.dir/src/Math/CubismTargetPoint.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Math/CubismTargetPoint.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Math/CubismTargetPoint.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Math/CubismTargetPoint.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Math/CubismTargetPoint.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Math
-build Framework/CMakeFiles/Framework.dir/src/Math/CubismVector2.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Math/CubismVector2.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Math/CubismVector2.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Math/CubismVector2.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Math/CubismVector2.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Math
-build Framework/CMakeFiles/Framework.dir/src/Math/CubismViewMatrix.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Math/CubismViewMatrix.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Math/CubismViewMatrix.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Math/CubismViewMatrix.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Math/CubismViewMatrix.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Math
-build Framework/CMakeFiles/Framework.dir/src/Model/CubismMoc.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Model/CubismMoc.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Model/CubismMoc.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Model/CubismMoc.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Model/CubismMoc.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Model
-build Framework/CMakeFiles/Framework.dir/src/Model/CubismModel.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Model/CubismModel.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Model/CubismModel.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Model/CubismModel.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Model/CubismModel.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Model
-build Framework/CMakeFiles/Framework.dir/src/Model/CubismModelUserData.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Model/CubismModelUserData.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Model/CubismModelUserData.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Model/CubismModelUserData.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Model/CubismModelUserData.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Model
-build Framework/CMakeFiles/Framework.dir/src/Model/CubismModelUserDataJson.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Model/CubismModelUserDataJson.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Model/CubismModelUserDataJson.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Model/CubismModelUserDataJson.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Model/CubismModelUserDataJson.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Model
-build Framework/CMakeFiles/Framework.dir/src/Model/CubismUserModel.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Model/CubismUserModel.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Model/CubismUserModel.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Model/CubismUserModel.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Model/CubismUserModel.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Model
-build Framework/CMakeFiles/Framework.dir/src/Motion/ACubismMotion.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Motion/ACubismMotion.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Motion/ACubismMotion.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Motion/ACubismMotion.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Motion/ACubismMotion.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Motion
-build Framework/CMakeFiles/Framework.dir/src/Motion/CubismExpressionMotion.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Motion/CubismExpressionMotion.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Motion/CubismExpressionMotion.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Motion/CubismExpressionMotion.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Motion/CubismExpressionMotion.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Motion
-build Framework/CMakeFiles/Framework.dir/src/Motion/CubismMotion.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Motion/CubismMotion.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Motion/CubismMotion.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Motion/CubismMotion.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Motion/CubismMotion.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Motion
-build Framework/CMakeFiles/Framework.dir/src/Motion/CubismMotionJson.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Motion/CubismMotionJson.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Motion/CubismMotionJson.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Motion/CubismMotionJson.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Motion/CubismMotionJson.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Motion
-build Framework/CMakeFiles/Framework.dir/src/Motion/CubismMotionManager.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Motion/CubismMotionManager.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Motion/CubismMotionManager.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Motion/CubismMotionManager.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Motion/CubismMotionManager.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Motion
-build Framework/CMakeFiles/Framework.dir/src/Motion/CubismMotionQueueEntry.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Motion/CubismMotionQueueEntry.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Motion/CubismMotionQueueEntry.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Motion/CubismMotionQueueEntry.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Motion/CubismMotionQueueEntry.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Motion
-build Framework/CMakeFiles/Framework.dir/src/Motion/CubismMotionQueueManager.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Motion/CubismMotionQueueManager.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Motion/CubismMotionQueueManager.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Motion/CubismMotionQueueManager.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Motion/CubismMotionQueueManager.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Motion
-build Framework/CMakeFiles/Framework.dir/src/Physics/CubismPhysics.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Physics/CubismPhysics.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Physics/CubismPhysics.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Physics/CubismPhysics.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Physics/CubismPhysics.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Physics
-build Framework/CMakeFiles/Framework.dir/src/Physics/CubismPhysicsJson.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Physics/CubismPhysicsJson.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Physics/CubismPhysicsJson.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Physics/CubismPhysicsJson.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Physics/CubismPhysicsJson.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Physics
-build Framework/CMakeFiles/Framework.dir/src/Rendering/CubismRenderer.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Rendering/CubismRenderer.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Rendering/CubismRenderer.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Rendering/CubismRenderer.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Rendering/CubismRenderer.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Rendering
-build Framework/CMakeFiles/Framework.dir/src/Rendering/OpenGL/CubismOffscreenSurface_OpenGLES2.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Rendering/OpenGL/CubismOffscreenSurface_OpenGLES2.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Rendering/OpenGL/CubismOffscreenSurface_OpenGLES2.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Rendering/OpenGL/CubismOffscreenSurface_OpenGLES2.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Rendering/OpenGL/CubismOffscreenSurface_OpenGLES2.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Rendering/OpenGL
-build Framework/CMakeFiles/Framework.dir/src/Rendering/OpenGL/CubismRenderer_OpenGLES2.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Rendering/OpenGL/CubismRenderer_OpenGLES2.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Rendering/OpenGL/CubismRenderer_OpenGLES2.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Rendering/OpenGL/CubismRenderer_OpenGLES2.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Rendering/OpenGL/CubismRenderer_OpenGLES2.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Rendering/OpenGL
-build Framework/CMakeFiles/Framework.dir/src/Type/csmRectF.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Type/csmRectF.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Type/csmRectF.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Type/csmRectF.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Type/csmRectF.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Type
-build Framework/CMakeFiles/Framework.dir/src/Type/csmString.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Type/csmString.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Type/csmString.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Type/csmString.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Type/csmString.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Type
-build Framework/CMakeFiles/Framework.dir/src/Utils/CubismDebug.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Utils/CubismDebug.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Utils/CubismDebug.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Utils/CubismDebug.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Utils/CubismDebug.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Utils
-build Framework/CMakeFiles/Framework.dir/src/Utils/CubismJson.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Utils/CubismJson.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Utils/CubismJson.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Utils/CubismJson.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Utils/CubismJson.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Utils
-build Framework/CMakeFiles/Framework.dir/src/Utils/CubismString.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Utils/CubismString.cpp || cmake_object_order_depends_target_Framework
+build Framework/CMakeFiles/Framework.dir/src/Utils/CubismString.cpp.o: CXX_COMPILER__Framework /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Utils/CubismString.cpp || cmake_object_order_depends_target_Framework
   DEFINES = -DCSM_TARGET_ANDROID_ES2
   DEP_FILE = Framework/CMakeFiles/Framework.dir/src/Utils/CubismString.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -std=c++14
-  INCLUDES = -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
+  INCLUDES = -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src -I/Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/../Core/include
   OBJECT_DIR = Framework/CMakeFiles/Framework.dir
   OBJECT_FILE_DIR = Framework/CMakeFiles/Framework.dir/src/Utils
 
@@ -460,7 +460,7 @@ build Framework/libFramework.a: CXX_STATIC_LIBRARY_LINKER__Framework Framework/C
   TARGET_PDB = Framework.a.dbg
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/CMakeLists.txt
+# /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/CMakeLists.txt
 # =============================================================================
 
 
@@ -468,7 +468,7 @@ build Framework/libFramework.a: CXX_STATIC_LIBRARY_LINKER__Framework Framework/C
 # Utility command for rebuild_cache
 
 build Framework/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/benshuai/StudioProjects/uni-arts-app-Android/app -B/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a
+  COMMAND = cd /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/benshuai/StudioProjects/ArtGallery-Android/app -B/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -478,13 +478,13 @@ build Framework/src/rebuild_cache: phony Framework/src/CMakeFiles/rebuild_cache.
 # Utility command for edit_cache
 
 build Framework/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 build Framework/src/edit_cache: phony Framework/src/CMakeFiles/edit_cache.util
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/CMakeLists.txt
+# /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/CMakeLists.txt
 # =============================================================================
 
 
@@ -492,7 +492,7 @@ build Framework/src/edit_cache: phony Framework/src/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build Framework/src/Effect/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Effect && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/benshuai/StudioProjects/uni-arts-app-Android/app -B/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a
+  COMMAND = cd /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Effect && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/benshuai/StudioProjects/ArtGallery-Android/app -B/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -502,13 +502,13 @@ build Framework/src/Effect/rebuild_cache: phony Framework/src/Effect/CMakeFiles/
 # Utility command for edit_cache
 
 build Framework/src/Effect/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Effect && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Effect && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 build Framework/src/Effect/edit_cache: phony Framework/src/Effect/CMakeFiles/edit_cache.util
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/CMakeLists.txt
+# /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/CMakeLists.txt
 # =============================================================================
 
 
@@ -516,7 +516,7 @@ build Framework/src/Effect/edit_cache: phony Framework/src/Effect/CMakeFiles/edi
 # Utility command for rebuild_cache
 
 build Framework/src/Id/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Id && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/benshuai/StudioProjects/uni-arts-app-Android/app -B/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a
+  COMMAND = cd /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Id && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/benshuai/StudioProjects/ArtGallery-Android/app -B/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -526,13 +526,13 @@ build Framework/src/Id/rebuild_cache: phony Framework/src/Id/CMakeFiles/rebuild_
 # Utility command for edit_cache
 
 build Framework/src/Id/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Id && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Id && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 build Framework/src/Id/edit_cache: phony Framework/src/Id/CMakeFiles/edit_cache.util
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/CMakeLists.txt
+# /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/CMakeLists.txt
 # =============================================================================
 
 
@@ -540,7 +540,7 @@ build Framework/src/Id/edit_cache: phony Framework/src/Id/CMakeFiles/edit_cache.
 # Utility command for rebuild_cache
 
 build Framework/src/Math/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Math && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/benshuai/StudioProjects/uni-arts-app-Android/app -B/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a
+  COMMAND = cd /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Math && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/benshuai/StudioProjects/ArtGallery-Android/app -B/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -550,13 +550,13 @@ build Framework/src/Math/rebuild_cache: phony Framework/src/Math/CMakeFiles/rebu
 # Utility command for edit_cache
 
 build Framework/src/Math/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Math && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Math && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 build Framework/src/Math/edit_cache: phony Framework/src/Math/CMakeFiles/edit_cache.util
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/CMakeLists.txt
+# /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/CMakeLists.txt
 # =============================================================================
 
 
@@ -564,7 +564,7 @@ build Framework/src/Math/edit_cache: phony Framework/src/Math/CMakeFiles/edit_ca
 # Utility command for rebuild_cache
 
 build Framework/src/Model/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Model && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/benshuai/StudioProjects/uni-arts-app-Android/app -B/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a
+  COMMAND = cd /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Model && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/benshuai/StudioProjects/ArtGallery-Android/app -B/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -574,13 +574,13 @@ build Framework/src/Model/rebuild_cache: phony Framework/src/Model/CMakeFiles/re
 # Utility command for edit_cache
 
 build Framework/src/Model/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Model && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Model && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 build Framework/src/Model/edit_cache: phony Framework/src/Model/CMakeFiles/edit_cache.util
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/CMakeLists.txt
+# /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/CMakeLists.txt
 # =============================================================================
 
 
@@ -588,7 +588,7 @@ build Framework/src/Model/edit_cache: phony Framework/src/Model/CMakeFiles/edit_
 # Utility command for rebuild_cache
 
 build Framework/src/Motion/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Motion && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/benshuai/StudioProjects/uni-arts-app-Android/app -B/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a
+  COMMAND = cd /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Motion && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/benshuai/StudioProjects/ArtGallery-Android/app -B/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -598,13 +598,13 @@ build Framework/src/Motion/rebuild_cache: phony Framework/src/Motion/CMakeFiles/
 # Utility command for edit_cache
 
 build Framework/src/Motion/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Motion && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Motion && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 build Framework/src/Motion/edit_cache: phony Framework/src/Motion/CMakeFiles/edit_cache.util
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/CMakeLists.txt
+# /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/CMakeLists.txt
 # =============================================================================
 
 
@@ -612,7 +612,7 @@ build Framework/src/Motion/edit_cache: phony Framework/src/Motion/CMakeFiles/edi
 # Utility command for rebuild_cache
 
 build Framework/src/Physics/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Physics && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/benshuai/StudioProjects/uni-arts-app-Android/app -B/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a
+  COMMAND = cd /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Physics && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/benshuai/StudioProjects/ArtGallery-Android/app -B/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -622,13 +622,13 @@ build Framework/src/Physics/rebuild_cache: phony Framework/src/Physics/CMakeFile
 # Utility command for edit_cache
 
 build Framework/src/Physics/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Physics && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Physics && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 build Framework/src/Physics/edit_cache: phony Framework/src/Physics/CMakeFiles/edit_cache.util
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/CMakeLists.txt
+# /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/CMakeLists.txt
 # =============================================================================
 
 
@@ -636,7 +636,7 @@ build Framework/src/Physics/edit_cache: phony Framework/src/Physics/CMakeFiles/e
 # Utility command for rebuild_cache
 
 build Framework/src/Rendering/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Rendering && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/benshuai/StudioProjects/uni-arts-app-Android/app -B/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a
+  COMMAND = cd /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Rendering && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/benshuai/StudioProjects/ArtGallery-Android/app -B/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -646,13 +646,13 @@ build Framework/src/Rendering/rebuild_cache: phony Framework/src/Rendering/CMake
 # Utility command for edit_cache
 
 build Framework/src/Rendering/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Rendering && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Rendering && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 build Framework/src/Rendering/edit_cache: phony Framework/src/Rendering/CMakeFiles/edit_cache.util
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Rendering/CMakeLists.txt
+# /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Rendering/CMakeLists.txt
 # =============================================================================
 
 
@@ -660,7 +660,7 @@ build Framework/src/Rendering/edit_cache: phony Framework/src/Rendering/CMakeFil
 # Utility command for rebuild_cache
 
 build Framework/src/Rendering/OpenGL/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Rendering/OpenGL && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/benshuai/StudioProjects/uni-arts-app-Android/app -B/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a
+  COMMAND = cd /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Rendering/OpenGL && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/benshuai/StudioProjects/ArtGallery-Android/app -B/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -670,13 +670,13 @@ build Framework/src/Rendering/OpenGL/rebuild_cache: phony Framework/src/Renderin
 # Utility command for edit_cache
 
 build Framework/src/Rendering/OpenGL/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Rendering/OpenGL && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Rendering/OpenGL && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 build Framework/src/Rendering/OpenGL/edit_cache: phony Framework/src/Rendering/OpenGL/CMakeFiles/edit_cache.util
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/CMakeLists.txt
+# /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/CMakeLists.txt
 # =============================================================================
 
 
@@ -684,7 +684,7 @@ build Framework/src/Rendering/OpenGL/edit_cache: phony Framework/src/Rendering/O
 # Utility command for rebuild_cache
 
 build Framework/src/Type/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Type && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/benshuai/StudioProjects/uni-arts-app-Android/app -B/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a
+  COMMAND = cd /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Type && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/benshuai/StudioProjects/ArtGallery-Android/app -B/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -694,13 +694,13 @@ build Framework/src/Type/rebuild_cache: phony Framework/src/Type/CMakeFiles/rebu
 # Utility command for edit_cache
 
 build Framework/src/Type/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Type && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Type && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 build Framework/src/Type/edit_cache: phony Framework/src/Type/CMakeFiles/edit_cache.util
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/CMakeLists.txt
+# /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/CMakeLists.txt
 # =============================================================================
 
 
@@ -708,7 +708,7 @@ build Framework/src/Type/edit_cache: phony Framework/src/Type/CMakeFiles/edit_ca
 # Utility command for rebuild_cache
 
 build Framework/src/Utils/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Utils && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/benshuai/StudioProjects/uni-arts-app-Android/app -B/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a
+  COMMAND = cd /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Utils && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/benshuai/StudioProjects/ArtGallery-Android/app -B/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -718,13 +718,13 @@ build Framework/src/Utils/rebuild_cache: phony Framework/src/Utils/CMakeFiles/re
 # Utility command for edit_cache
 
 build Framework/src/Utils/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Utils && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Utils && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 build Framework/src/Utils/edit_cache: phony Framework/src/Utils/CMakeFiles/edit_cache.util
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt
+# /Users/benshuai/StudioProjects/ArtGallery-Android/app/CMakeLists.txt
 # =============================================================================
 
 
@@ -732,7 +732,7 @@ build Framework/src/Utils/edit_cache: phony Framework/src/Utils/CMakeFiles/edit_
 # Utility command for rebuild_cache
 
 build src/main/cpp/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/src/main/cpp && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/benshuai/StudioProjects/uni-arts-app-Android/app -B/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a
+  COMMAND = cd /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/src/main/cpp && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/benshuai/StudioProjects/ArtGallery-Android/app -B/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -742,7 +742,7 @@ build src/main/cpp/rebuild_cache: phony src/main/cpp/CMakeFiles/rebuild_cache.ut
 # Utility command for edit_cache
 
 build src/main/cpp/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/src/main/cpp && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/src/main/cpp && /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 build src/main/cpp/edit_cache: phony src/main/cpp/CMakeFiles/edit_cache.util
@@ -760,79 +760,79 @@ build libFramework.a: phony Framework/libFramework.a
 # =============================================================================
 
 #############################################
-# Folder: /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework
+# Folder: /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework
 
 build  Framework/all: phony Framework Framework/src/all
 # =============================================================================
 
 #############################################
-# Folder: /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src
+# Folder: /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src
 
 build  Framework/src/all: phony Framework/src/Effect/all Framework/src/Id/all Framework/src/Math/all Framework/src/Model/all Framework/src/Motion/all Framework/src/Physics/all Framework/src/Rendering/all Framework/src/Type/all Framework/src/Utils/all
 # =============================================================================
 
 #############################################
-# Folder: /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Effect
+# Folder: /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Effect
 
 build  Framework/src/Effect/all: phony
 # =============================================================================
 
 #############################################
-# Folder: /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Id
+# Folder: /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Id
 
 build  Framework/src/Id/all: phony
 # =============================================================================
 
 #############################################
-# Folder: /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Math
+# Folder: /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Math
 
 build  Framework/src/Math/all: phony
 # =============================================================================
 
 #############################################
-# Folder: /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Model
+# Folder: /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Model
 
 build  Framework/src/Model/all: phony
 # =============================================================================
 
 #############################################
-# Folder: /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Motion
+# Folder: /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Motion
 
 build  Framework/src/Motion/all: phony
 # =============================================================================
 
 #############################################
-# Folder: /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Physics
+# Folder: /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Physics
 
 build  Framework/src/Physics/all: phony
 # =============================================================================
 
 #############################################
-# Folder: /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Rendering
+# Folder: /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Rendering
 
 build  Framework/src/Rendering/all: phony Framework/src/Rendering/OpenGL/all
 # =============================================================================
 
 #############################################
-# Folder: /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Rendering/OpenGL
+# Folder: /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Rendering/OpenGL
 
 build  Framework/src/Rendering/OpenGL/all: phony
 # =============================================================================
 
 #############################################
-# Folder: /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Type
+# Folder: /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Type
 
 build  Framework/src/Type/all: phony
 # =============================================================================
 
 #############################################
-# Folder: /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Utils
+# Folder: /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/Utils
 
 build  Framework/src/Utils/all: phony
 # =============================================================================
 
 #############################################
-# Folder: /Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/src/main/cpp
+# Folder: /Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/src/main/cpp
 
 build  src/main/cpp/all: phony
 # =============================================================================
@@ -852,13 +852,13 @@ default all
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../../../../CMakeLists.txt ../../../../src/main/cpp/CMakeLists.txt /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCInformation.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXInformation.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeGenericSystem.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInformation.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInitialize.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/GNU.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-C.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-CXX.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Initialize.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Linux.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/UnixPaths.cmake /Users/benshuai/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake /Users/benshuai/Library/Android/sdk/ndk-bundle/build/cmake/compiler_id.cmake /Users/benshuai/Library/Android/sdk/ndk-bundle/build/cmake/platforms.cmake /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/CMakeLists.txt /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/CMakeLists.txt /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Effect/CMakeLists.txt /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Id/CMakeLists.txt /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Math/CMakeLists.txt /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Model/CMakeLists.txt /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Motion/CMakeLists.txt /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Physics/CMakeLists.txt /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Rendering/CMakeLists.txt /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Rendering/OpenGL/CMakeLists.txt /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Type/CMakeLists.txt /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Utils/CMakeLists.txt CMakeCache.txt CMakeFiles/3.10.2/CMakeCCompiler.cmake CMakeFiles/3.10.2/CMakeCXXCompiler.cmake CMakeFiles/3.10.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../../../../CMakeLists.txt ../../../../src/main/cpp/CMakeLists.txt /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompilerABI.c /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCInformation.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompiler.cmake.in /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXInformation.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCCompiler.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCXXCompiler.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompileFeatures.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompiler.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompilerABI.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeFindBinUtils.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeGenericSystem.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeParseImplicitLinkInfo.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystem.cmake.in /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInformation.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInitialize.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCCompiler.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCXXCompiler.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCompilerCommon.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-FindBinUtils.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/GNU.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Internal/FeatureTesting.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-C.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-CXX.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-C.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-CXX.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Initialize.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android/Determine-Compiler.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Linux.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/UnixPaths.cmake /Users/benshuai/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake /Users/benshuai/Library/Android/sdk/ndk-bundle/build/cmake/compiler_id.cmake /Users/benshuai/Library/Android/sdk/ndk-bundle/build/cmake/platforms.cmake /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/CMakeLists.txt /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/CMakeLists.txt /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Effect/CMakeLists.txt /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Id/CMakeLists.txt /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Math/CMakeLists.txt /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Model/CMakeLists.txt /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Motion/CMakeLists.txt /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Physics/CMakeLists.txt /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Rendering/CMakeLists.txt /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Rendering/OpenGL/CMakeLists.txt /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Type/CMakeLists.txt /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Utils/CMakeLists.txt CMakeCache.txt CMakeFiles/3.10.2/CMakeCCompiler.cmake CMakeFiles/3.10.2/CMakeCXXCompiler.cmake CMakeFiles/3.10.2/CMakeSystem.cmake CMakeFiles/feature_tests.c CMakeFiles/feature_tests.cxx
   pool = console
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../../../../CMakeLists.txt ../../../../src/main/cpp/CMakeLists.txt /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCInformation.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXInformation.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeGenericSystem.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInformation.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInitialize.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/GNU.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-C.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-CXX.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Initialize.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Linux.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/UnixPaths.cmake /Users/benshuai/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake /Users/benshuai/Library/Android/sdk/ndk-bundle/build/cmake/compiler_id.cmake /Users/benshuai/Library/Android/sdk/ndk-bundle/build/cmake/platforms.cmake /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/CMakeLists.txt /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/CMakeLists.txt /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Effect/CMakeLists.txt /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Id/CMakeLists.txt /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Math/CMakeLists.txt /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Model/CMakeLists.txt /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Motion/CMakeLists.txt /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Physics/CMakeLists.txt /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Rendering/CMakeLists.txt /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Rendering/OpenGL/CMakeLists.txt /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Type/CMakeLists.txt /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Utils/CMakeLists.txt CMakeCache.txt CMakeFiles/3.10.2/CMakeCCompiler.cmake CMakeFiles/3.10.2/CMakeCXXCompiler.cmake CMakeFiles/3.10.2/CMakeSystem.cmake: phony
+build ../../../../CMakeLists.txt ../../../../src/main/cpp/CMakeLists.txt /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompilerABI.c /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCInformation.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompiler.cmake.in /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXInformation.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCCompiler.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCXXCompiler.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompileFeatures.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompiler.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompilerABI.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeFindBinUtils.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeGenericSystem.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeParseImplicitLinkInfo.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystem.cmake.in /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInformation.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInitialize.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCCompiler.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCXXCompiler.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCompilerCommon.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-FindBinUtils.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/GNU.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Internal/FeatureTesting.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-C.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-CXX.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-C.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-CXX.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Initialize.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android/Determine-Compiler.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Linux.cmake /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/UnixPaths.cmake /Users/benshuai/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake /Users/benshuai/Library/Android/sdk/ndk-bundle/build/cmake/compiler_id.cmake /Users/benshuai/Library/Android/sdk/ndk-bundle/build/cmake/platforms.cmake /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/CMakeLists.txt /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/CMakeLists.txt /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Effect/CMakeLists.txt /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Id/CMakeLists.txt /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Math/CMakeLists.txt /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Model/CMakeLists.txt /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Motion/CMakeLists.txt /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Physics/CMakeLists.txt /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Rendering/CMakeLists.txt /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Rendering/OpenGL/CMakeLists.txt /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Type/CMakeLists.txt /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Utils/CMakeLists.txt CMakeCache.txt CMakeFiles/3.10.2/CMakeCCompiler.cmake CMakeFiles/3.10.2/CMakeCXXCompiler.cmake CMakeFiles/3.10.2/CMakeSystem.cmake CMakeFiles/feature_tests.c CMakeFiles/feature_tests.cxx: phony
 
 #############################################
 # Clean all the built files.

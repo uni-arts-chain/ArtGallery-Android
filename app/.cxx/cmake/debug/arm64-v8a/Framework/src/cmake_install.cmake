@@ -1,4 +1,4 @@
-# Install script for directory: /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src
+# Install script for directory: /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,15 +39,15 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/arm64-v8a/Framework/src/Effect/cmake_install.cmake")
-  include("/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/arm64-v8a/Framework/src/Id/cmake_install.cmake")
-  include("/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/arm64-v8a/Framework/src/Math/cmake_install.cmake")
-  include("/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/arm64-v8a/Framework/src/Model/cmake_install.cmake")
-  include("/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/arm64-v8a/Framework/src/Motion/cmake_install.cmake")
-  include("/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/arm64-v8a/Framework/src/Physics/cmake_install.cmake")
-  include("/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/arm64-v8a/Framework/src/Rendering/cmake_install.cmake")
-  include("/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/arm64-v8a/Framework/src/Type/cmake_install.cmake")
-  include("/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/arm64-v8a/Framework/src/Utils/cmake_install.cmake")
+  include("/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/arm64-v8a/Framework/src/Effect/cmake_install.cmake")
+  include("/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/arm64-v8a/Framework/src/Id/cmake_install.cmake")
+  include("/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/arm64-v8a/Framework/src/Math/cmake_install.cmake")
+  include("/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/arm64-v8a/Framework/src/Model/cmake_install.cmake")
+  include("/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/arm64-v8a/Framework/src/Motion/cmake_install.cmake")
+  include("/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/arm64-v8a/Framework/src/Physics/cmake_install.cmake")
+  include("/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/arm64-v8a/Framework/src/Rendering/cmake_install.cmake")
+  include("/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/arm64-v8a/Framework/src/Type/cmake_install.cmake")
+  include("/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/arm64-v8a/Framework/src/Utils/cmake_install.cmake")
 
 endif()
 

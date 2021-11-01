@@ -1,4 +1,4 @@
-# Install script for directory: /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework
+# Install script for directory: /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/cmake_install.cmake")
+  include("/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/armeabi-v7a/Framework/src/cmake_install.cmake")
 
 endif()
 

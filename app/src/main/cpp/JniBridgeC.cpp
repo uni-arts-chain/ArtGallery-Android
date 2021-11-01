@@ -33,7 +33,7 @@ jint JNICALL JNI_OnLoad(JavaVM *vm, void *reserved) {
         return JNI_ERR;
     }
 
-    jclass clazz = env->FindClass("com/gammaray/JniBridgeJava");
+    jclass clazz = env->FindClass("com/artgallery/JniBridgeJava");
     g_JniBridgeJavaClass = reinterpret_cast<jclass>(env->NewGlobalRef(clazz));
     g_LoadFileMethodId = env->GetStaticMethodID(g_JniBridgeJavaClass, "LoadFile",
                                                 "(Ljava/lang/String;)[B");

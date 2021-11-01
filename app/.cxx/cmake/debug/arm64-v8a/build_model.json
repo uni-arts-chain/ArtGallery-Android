@@ -5,9 +5,9 @@
     "environmentVariables": []
   },
   "cmake": {
-    "cmakeArtifactsBaseFolder": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/arm64-v8a",
-    "cmakeServerLogFile": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/arm64-v8a/cmake_server_log.txt",
-    "cmakeWrappingBaseFolder": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cxx/debug/arm64-v8a",
+    "cmakeArtifactsBaseFolder": "/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/arm64-v8a",
+    "cmakeServerLogFile": "/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/arm64-v8a/cmake_server_log.txt",
+    "cmakeWrappingBaseFolder": "/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cxx/debug/arm64-v8a",
     "effectiveConfiguration": {
       "name": "traditional-android-studio-cmake-environment",
       "description": "Composite reified CMakeSettings configuration",
@@ -15,13 +15,13 @@
       "inheritEnvironments": [
         "ndk"
       ],
-      "buildRoot": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/arm64-v8a",
+      "buildRoot": "/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/arm64-v8a",
       "cmakeToolchain": "/Users/benshuai/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake",
       "cmakeExecutable": "/Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake",
       "variables": [
         {
           "name": "CMAKE_FIND_ROOT_PATH",
-          "value": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/prefab/arm64-v8a/prefab"
+          "value": "/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/prefab/arm64-v8a/prefab"
         },
         {
           "name": "CMAKE_BUILD_TYPE",
@@ -57,7 +57,7 @@
         },
         {
           "name": "CMAKE_LIBRARY_OUTPUT_DIRECTORY",
-          "value": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/build/intermediates/cmake/debug/obj/arm64-v8a"
+          "value": "/Users/benshuai/StudioProjects/ArtGallery-Android/app/build/intermediates/cmake/debug/obj/arm64-v8a"
         },
         {
           "name": "CMAKE_MAKE_PROGRAM",
@@ -74,14 +74,14 @@
       ]
     }
   },
-  "cxxBuildFolder": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/arm64-v8a",
+  "cxxBuildFolder": "/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/arm64-v8a",
   "info": {
     "abi": "ARM64_V8A",
     "bitness": 64,
     "deprecated": false,
     "default": true
   },
-  "originalCxxBuildFolder": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/arm64-v8a",
+  "originalCxxBuildFolder": "/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/arm64-v8a",
   "variant": {
     "buildSystemArgumentList": [],
     "buildTargetSet": [],
@@ -97,12 +97,12 @@
         "ninjaExe": "/Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja"
       },
       "cmakeToolchainFile": "/Users/benshuai/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake",
-      "cxxFolder": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx",
+      "cxxFolder": "/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx",
       "gradleModulePathName": ":app",
-      "intermediatesFolder": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/build/intermediates",
-      "makeFile": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/CMakeLists.txt",
-      "moduleBuildFile": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/build.gradle",
-      "moduleRootFolder": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app",
+      "intermediatesFolder": "/Users/benshuai/StudioProjects/ArtGallery-Android/app/build/intermediates",
+      "makeFile": "/Users/benshuai/StudioProjects/ArtGallery-Android/app/CMakeLists.txt",
+      "moduleBuildFile": "/Users/benshuai/StudioProjects/ArtGallery-Android/app/build.gradle",
+      "moduleRootFolder": "/Users/benshuai/StudioProjects/ArtGallery-Android/app",
       "ndkDefaultAbiList": [
         "ARMEABI_V7A",
         "ARM64_V8A",
@@ -167,12 +167,13 @@
       "ndkDefaultStl": "LIBCXX_STATIC",
       "ndkVersion": "22.1.7171670",
       "project": {
-        "compilerSettingsCacheFolder": "/Users/benshuai/StudioProjects/uni-arts-app-Android/.cxx",
-        "cxxFolder": "/Users/benshuai/StudioProjects/uni-arts-app-Android/.cxx",
+        "compilerSettingsCacheFolder": "/Users/benshuai/StudioProjects/ArtGallery-Android/.cxx",
+        "cxxFolder": "/Users/benshuai/StudioProjects/ArtGallery-Android/.cxx",
+        "ideBuildTargetAbi": "arm64-v8a,armeabi-v7a,armeabi",
         "isBuildOnlyTargetAbiEnabled": true,
         "isCmakeBuildCohabitationEnabled": false,
         "isNativeCompilerSettingsCacheEnabled": false,
-        "rootBuildGradleFolder": "/Users/benshuai/StudioProjects/uni-arts-app-Android",
+        "rootBuildGradleFolder": "/Users/benshuai/StudioProjects/ArtGallery-Android",
         "sdkFolder": "/Users/benshuai/Library/Android/sdk",
         "isPrefabEnabled": false
       },
@@ -189,14 +190,13 @@
         "SYSTEM": {}
       }
     },
-    "objFolder": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/build/intermediates/cmake/debug/obj",
+    "objFolder": "/Users/benshuai/StudioProjects/ArtGallery-Android/app/build/intermediates/cmake/debug/obj",
     "variantName": "debug",
     "validAbiList": [
-      "ARMEABI_V7A",
       "ARM64_V8A"
     ],
-    "prefabDirectory": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/prefab",
+    "prefabDirectory": "/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/prefab",
     "prefabPackageDirectoryList": []
   },
-  "prefabFolder": "/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/prefab/arm64-v8a"
+  "prefabFolder": "/Users/benshuai/StudioProjects/ArtGallery-Android/app/.cxx/cmake/debug/prefab/arm64-v8a"
 }

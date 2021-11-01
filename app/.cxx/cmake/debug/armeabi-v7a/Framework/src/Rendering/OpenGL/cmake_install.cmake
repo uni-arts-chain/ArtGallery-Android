@@ -1,4 +1,4 @@
-# Install script for directory: /Users/benshuai/StudioProjects/uni-arts-app-Android/CubismSdkForNative-4-r.2/Framework/src/Rendering/OpenGL
+# Install script for directory: /Users/benshuai/StudioProjects/ArtGallery-Android/CubismSdkForNative-4-r.2/Framework/src/Rendering/OpenGL
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

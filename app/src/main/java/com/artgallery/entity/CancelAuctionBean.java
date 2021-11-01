@@ -1,0 +1,6 @@
+package com.artgallery.entity;
+
+import java.io.Serializable;
+
+public class CancelAuctionBean implements Serializable {
+}

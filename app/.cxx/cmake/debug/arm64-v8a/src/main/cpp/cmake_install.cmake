@@ -1,4 +1,4 @@
-# Install script for directory: /Users/benshuai/StudioProjects/uni-arts-app-Android/app/src/main/cpp
+# Install script for directory: /Users/benshuai/StudioProjects/ArtGallery-Android/app/src/main/cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

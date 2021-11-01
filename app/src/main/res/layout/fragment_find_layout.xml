@@ -227,7 +227,7 @@
                             app:tabMinWidth="70dp"
                             app:tabSelectedTextColor="@color/_101010" />
 
-                        <com.gammaray.widget.NoScrollViewPager
+                        <com.artgallery.widget.NoScrollViewPager
                             android:id="@+id/vp_chains"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"

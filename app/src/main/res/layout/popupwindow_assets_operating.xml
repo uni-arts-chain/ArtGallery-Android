@@ -6,7 +6,7 @@
 
         <variable
             name="handlers"
-            type="com.gammaray.widget.UploadNormalPopUpWindow.ClickHandlers" />
+            type="com.artgallery.widget.UploadNormalPopUpWindow.ClickHandlers" />
 
     </data>
 

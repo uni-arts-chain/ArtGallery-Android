@@ -25,7 +25,7 @@
                 android:layout_marginLeft="15dp"
                 android:background="@drawable/img_bg_circle_mine_head">
 
-                <com.gammaray.widget.CircleImageView
+                <com.artgallery.widget.CircleImageView
                     android:id="@+id/mine_title_img"
                     android:layout_width="@dimen/dp_50"
                     android:layout_height="@dimen/dp_50"

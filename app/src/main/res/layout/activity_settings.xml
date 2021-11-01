@@ -45,7 +45,7 @@
                     android:layout_centerVertical="true"
                     android:src="@mipmap/icon_arrow_right" />
 
-                <com.gammaray.widget.CircleImageView
+                <com.artgallery.widget.CircleImageView
                     android:id="@+id/mine_title_img"
                     android:layout_width="38dp"
                     android:layout_height="38dp"
