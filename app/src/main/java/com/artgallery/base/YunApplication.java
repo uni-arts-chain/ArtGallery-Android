@@ -1,6 +1,5 @@
 package com.artgallery.base;
 
-import android.content.res.AssetManager;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Environment;
 import android.os.Handler;
@@ -8,8 +7,6 @@ import android.os.Message;
 import android.widget.Toast;
 
 import com.alibaba.android.arouter.launcher.ARouter;
-import com.blankj.utilcode.util.LogUtils;
-import com.artgallery.constant.AppConstant;
 import com.artgallery.constant.ExtraConstant;
 import com.artgallery.entity.ArtPriceVo;
 import com.artgallery.entity.ArtTypeVo;
@@ -21,26 +18,18 @@ import com.artgallery.eth.domain.DaoSession;
 import com.artgallery.eth.repository.RepositoryFactory;
 import com.artgallery.eth.repository.SharedPreferenceRepository;
 import com.artgallery.eth.util.AppFilePath;
-import com.artgallery.net.HeaderIntercepter;
 import com.artgallery.net.LogInterceptor;
 import com.artgallery.net.NetworkManager;
-import com.artgallery.service.TokenInterceptor;
 import com.artgallery.utils.UserManager;
+import com.blankj.utilcode.util.LogUtils;
 import com.google.gson.Gson;
-import com.igexin.sdk.PushManager;
 import com.tencent.smtt.sdk.QbSdk;
 import com.tencent.smtt.sdk.TbsListener;
-import com.umeng.analytics.MobclickAgent;
-import com.umeng.commonsdk.UMConfigure;
-import com.zhy.http.okhttp.OkHttpUtils;
-import com.zhy.http.okhttp.https.HttpsUtils;
 
 import org.greenrobot.eventbus.EventBus;
 
 import java.io.File;
-import java.io.InputStream;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 import io.realm.Realm;
 import jp.co.soramitsu.app.App;
@@ -137,14 +126,11 @@ public class YunApplication extends App {
         mYunApplicaion = this;
         System.loadLibrary("TrustWalletCore");
         ARouter.init(this);
-        PushManager.getInstance().initialize(this);
         NetworkManager.instance().init();
         AppFilePath.init(this);
         init();
         Realm.init(this);
         initX5();
-        initUMeng();
-//        initOkhttpUtils();
         if (handler == null) {
             handler = new DemoHandler();
         }
@@ -198,20 +184,6 @@ public class YunApplication extends App {
             }
         });
         QbSdk.initX5Environment(this, cb);
-    }
-
-    private void initUMeng() {
-        //注意: 即使您已经在AndroidManifest.xml中配置过appkey和channel值，也需要在App代码中调
-        //用初始化接口（如需要使用AndroidManifest.xml中配置好的appkey和channel值，
-        //UMConfigure.init调用中appkey和channel参数请置为null）。
-        UMConfigure.init(this, AppConstant.UMENG_APP_KEY, "Android", UMConfigure.DEVICE_TYPE_PHONE, null);
-        //设置组件化的Log开关
-        //参数: boolean 默认为false，如需查看LOG设置为true
-        UMConfigure.setLogEnabled(true);
-        // 选用LEGACY_AUTO页面采集模式
-        MobclickAgent.setPageCollectionMode(MobclickAgent.PageMode.LEGACY_MANUAL);
-        // 支持在子进程中统计自定义事件
-        UMConfigure.setProcessEvent(true);
     }
 
     public static void setNetWorkInfo(List<NetworkInfos> netWorkInfos) {
@@ -314,28 +286,5 @@ public class YunApplication extends App {
 
         }
 
-    }
-
-    public void initOkhttpUtils() {
-        try {
-            AssetManager assetManager = getAssets();
-            InputStream[] inputStreams = new InputStream[1];
-            inputStreams[0] = assetManager.open("3736864_www.stockcb.com.pem");
-            HttpsUtils.SSLParams sslParams = HttpsUtils.getSslSocketFactory(inputStreams, null, null);
-            OkHttpClient okHttpClient = new OkHttpClient.Builder()
-                    .retryOnConnectionFailure(false)
-                    .connectTimeout(DEFAULT_TIMEOUT, TimeUnit.MILLISECONDS)
-                    .readTimeout(DEFAULT_TIMEOUT, TimeUnit.MILLISECONDS)
-                    .writeTimeout(DEFAULT_TIMEOUT, TimeUnit.MILLISECONDS)
-                    .addInterceptor(new TokenInterceptor())
-                    .addInterceptor(new LogInterceptor())
-                    .addInterceptor(new HeaderIntercepter())
-                    .sslSocketFactory(sslParams.sSLSocketFactory, sslParams.trustManager)
-                    //其他配置
-                    .build();
-            OkHttpUtils.initClient(okHttpClient);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
     }
 }

@@ -215,17 +215,6 @@
             android:name="com.artgallery.ui.activity.user.MessagesActivity"
             android:screenOrientation="portrait" />
 
-        <service
-            android:name="com.artgallery.service.PushIntentService"
-            android:enabled="true"
-            android:exported="true"
-            android:permission="android.permission.BIND_JOB_SERVICE" />
-        <service
-            android:name="com.artgallery.service.MessagePushService"
-            android:enabled="true"
-            android:exported="true"
-            android:process=":pushservice" />
-
         <activity
             android:name="com.artgallery.ui.activity.ConfirmDocumentsActivity"
             android:screenOrientation="portrait" />
