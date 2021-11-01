@@ -47,6 +47,7 @@ import com.artgallery.widget.PermissionDialog;
 import com.artgallery.widget.UpdateDialog;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.gson.Gson;
+import com.igexin.sdk.PushManager;
 import com.upbest.arouter.ArouterModelPath;
 import com.upbest.arouter.EventEntity;
 import com.upbest.arouter.Extras;
@@ -287,7 +288,7 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
         hashMap.put("address", Address);
         hashMap.put("message", Address);
         hashMap.put("signature", singStr2);
-//        hashMap.put("cid", PushManager.getInstance().getClientid(this));
+        hashMap.put("cid", PushManager.getInstance().getClientid(this));
         hashMap.put("os", "android");
         RequestManager.instance().addressLogin(hashMap, new MinerCallback<BaseResponseVo<UserVo>>() {
             @Override

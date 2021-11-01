@@ -21,11 +21,12 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.util.Util;
+import com.umeng.analytics.MobclickAgent;
 import com.artgallery.R;
 import com.artgallery.utils.StatusBarCompat;
 import com.artgallery.widget.LoadingDialog;
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.util.Util;
 
 import java.lang.reflect.Field;
 
@@ -171,12 +172,14 @@ public abstract class BaseActivity<T> extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        MobclickAgent.onResume(this);
     }
 
     // Activity页面onResume函数重载
     @Override
     protected void onPause() {
         super.onPause();
+        MobclickAgent.onPause(this);
     }
 
     @Override

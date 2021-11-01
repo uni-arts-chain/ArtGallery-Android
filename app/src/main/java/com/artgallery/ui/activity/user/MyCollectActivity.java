@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.blankj.utilcode.util.LogUtils;
+import com.igexin.sdk.PushManager;
 import com.artgallery.R;
 import com.artgallery.adapter.CollectionAdapter;
 import com.artgallery.base.BaseActivity;
@@ -139,7 +140,7 @@ public class MyCollectActivity extends BaseActivity<ActivityMyCollectBinding> {
         hashMap.put("address", SharedPreUtils.getString(this, SharedPreUtils.KEY_ADDRESS));
         hashMap.put("message", SharedPreUtils.getString(this, SharedPreUtils.KEY_ADDRESS));
         hashMap.put("signature", singStr2);
-//        hashMap.put("cid", PushManager.getInstance().getClientid(this));
+        hashMap.put("cid", PushManager.getInstance().getClientid(this));
         hashMap.put("os", "android");
 
     }

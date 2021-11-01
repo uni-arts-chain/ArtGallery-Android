@@ -110,61 +110,61 @@ std::string JniBridgeC::UTF16StringToUTF8String(const char16_t *chars, size_t le
 extern "C"
 {
 JNIEXPORT void JNICALL
-Java_com_artgallery_JniBridgeJava_nativeOnStart(JNIEnv *env, jclass type) {
+Java_com_gammaray_JniBridgeJava_nativeOnStart(JNIEnv *env, jclass type) {
     LAppDelegate::GetInstance()->OnStart();
 }
 
 JNIEXPORT void JNICALL
-Java_com_artgallery_JniBridgeJava_nativeOnPause(JNIEnv *env, jclass type) {
+Java_com_gammaray_JniBridgeJava_nativeOnPause(JNIEnv *env, jclass type) {
     LAppDelegate::GetInstance()->OnPause();
 }
 
 JNIEXPORT void JNICALL
-Java_com_artgallery_JniBridgeJava_nativeOnStop(JNIEnv *env, jclass type) {
+Java_com_gammaray_JniBridgeJava_nativeOnStop(JNIEnv *env, jclass type) {
     LAppDelegate::GetInstance()->OnStop();
 }
 
 JNIEXPORT void JNICALL
-Java_com_artgallery_JniBridgeJava_nativeOnDestroy(JNIEnv *env, jclass type) {
+Java_com_gammaray_JniBridgeJava_nativeOnDestroy(JNIEnv *env, jclass type) {
     LAppDelegate::GetInstance()->OnDestroy();
 }
 
 JNIEXPORT void JNICALL
-Java_com_artgallery_JniBridgeJava_nativeOnSurfaceCreated(JNIEnv *env, jclass type) {
+Java_com_gammaray_JniBridgeJava_nativeOnSurfaceCreated(JNIEnv *env, jclass type) {
     LAppDelegate::GetInstance()->OnSurfaceCreate();
 }
 
 JNIEXPORT void JNICALL
-Java_com_artgallery_JniBridgeJava_nativeOnSurfaceChanged(JNIEnv *env, jclass type, jint width,
+Java_com_gammaray_JniBridgeJava_nativeOnSurfaceChanged(JNIEnv *env, jclass type, jint width,
                                                          jint height) {
     LAppDelegate::GetInstance()->OnSurfaceChanged(width, height);
 }
 
 JNIEXPORT void JNICALL
-Java_com_artgallery_JniBridgeJava_nativeOnDrawFrame(JNIEnv *env, jclass type) {
+Java_com_gammaray_JniBridgeJava_nativeOnDrawFrame(JNIEnv *env, jclass type) {
     LAppDelegate::GetInstance()->Run();
 }
 
 JNIEXPORT void JNICALL
-Java_com_artgallery_JniBridgeJava_nativeOnTouchesBegan(JNIEnv *env, jclass type, jfloat pointX,
+Java_com_gammaray_JniBridgeJava_nativeOnTouchesBegan(JNIEnv *env, jclass type, jfloat pointX,
                                                        jfloat pointY) {
     LAppDelegate::GetInstance()->OnTouchBegan(pointX, pointY);
 }
 
 JNIEXPORT void JNICALL
-Java_com_artgallery_JniBridgeJava_nativeOnTouchesEnded(JNIEnv *env, jclass type, jfloat pointX,
+Java_com_gammaray_JniBridgeJava_nativeOnTouchesEnded(JNIEnv *env, jclass type, jfloat pointX,
                                                        jfloat pointY) {
     LAppDelegate::GetInstance()->OnTouchEnded(pointX, pointY);
 }
 
 JNIEXPORT void JNICALL
-Java_com_artgallery_JniBridgeJava_nativeOnTouchesMoved(JNIEnv *env, jclass type, jfloat pointX,
+Java_com_gammaray_JniBridgeJava_nativeOnTouchesMoved(JNIEnv *env, jclass type, jfloat pointX,
                                                        jfloat pointY) {
     LAppDelegate::GetInstance()->OnTouchMoved(pointX, pointY);
 }
 
 JNIEXPORT void JNICALL
-Java_com_artgallery_JniBridgeJava_loadModelFile(JNIEnv *env, jclass type, jstring modelPath,
+Java_com_gammaray_JniBridgeJava_loadModelFile(JNIEnv *env, jclass type, jstring modelPath,
                                                 jstring jsonModelName) {
     std::string tempModelPath = JniBridgeC::JavaStringToString(env, modelPath);
     std::string tempJsonModelName = JniBridgeC::JavaStringToString(env, jsonModelName);

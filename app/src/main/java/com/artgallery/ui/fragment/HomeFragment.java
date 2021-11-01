@@ -23,6 +23,7 @@ import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.artgallery.eth.interact.CreateWalletInteract;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.tabs.TabLayout;
+import com.igexin.sdk.PushManager;
 import com.upbest.arouter.EventBusMessageEvent;
 import com.upbest.arouter.EventEntity;
 import com.artgallery.R;
@@ -644,7 +645,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
         hashMap.put("address", Address);
         hashMap.put("message", Address);
         hashMap.put("signature", singStr2);
-//        hashMap.put("cid", PushManager.getInstance().getClientid(mActivity));
+        hashMap.put("cid", PushManager.getInstance().getClientid(mActivity));
         hashMap.put("os", "android");
         RequestManager.instance().addressLogin(hashMap, new MinerCallback<BaseResponseVo<UserVo>>() {
             @Override

@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.blankj.utilcode.util.LogUtils;
 import com.blankj.utilcode.util.ToastUtils;
+import com.igexin.sdk.PushManager;
 import com.upbest.arouter.EventBusMessageEvent;
 import com.upbest.arouter.EventEntity;
 import com.upbest.arouter.Extras;
@@ -100,7 +101,7 @@ public class ImportWalletActivity extends BaseActivity<ActivityAcountBinding> {
         hashMap.put("address", Address);
         hashMap.put("message", Address);
         hashMap.put("signature", singStr2);
-//        hashMap.put("cid", PushManager.getInstance().getClientid(this));
+        hashMap.put("cid", PushManager.getInstance().getClientid(this));
         hashMap.put("os", "android");
         RequestManager.instance().addressLogin(hashMap, new MinerCallback<BaseResponseVo<UserVo>>() {
             @Override
