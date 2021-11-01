@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <include
+            android:id="@+id/mAppBarLayout_av"
+            layout="@layout/layout_generic_toolbar" />
+
+        <RelativeLayout
+            android:id="@+id/rl_code_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mAppBarLayout_av"
+            android:layout_marginTop="18dp">
+
+            <!--添加支付宝付款码-->
+            <RelativeLayout
+                android:id="@+id/rl_add_zfb_layout"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="122dp"
+                    android:layout_height="122dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_add_bg">
+
+                    <ImageView
+                        android:id="@+id/img_zfb_add"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="34dp"
+                        android:background="@mipmap/icon_add" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_zfb_add"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="上传图片"
+                        android:textColor="@color/_666666"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="155dp"
+                    android:drawableStart="@mipmap/icon_apay"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="支付宝收款码"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <!--显示支付宝付款码-->
+
+            <RelativeLayout
+                android:id="@+id/rl_zfb_layout"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/rl_zfb_code_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_zfb_code"
+                        android:layout_width="122dp"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:maxHeight="250dp"
+                        android:padding="2dp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_alipay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_zfb_code_layout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="23dp"
+                    android:drawableStart="@mipmap/icon_apay"
+                    android:drawablePadding="5dp"
+                    android:text="支付宝收款码"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_zfb_select"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_above="@id/tv_alipay"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@mipmap/icon_m_select" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/img_delete_zfb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="1dp"
+                    android:background="@mipmap/icon_m_delete"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <!--添加微信付款码-->
+
+            <RelativeLayout
+                android:id="@+id/rl_add_wx_layout"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/ll_wx_code_layout"
+                    android:layout_width="122dp"
+                    android:layout_height="122dp"
+                    android:background="@drawable/shape_add_bg">
+
+                    <ImageView
+                        android:id="@+id/img_wx_add"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="34dp"
+                        android:background="@mipmap/icon_add" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_wx_add"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="上传图片"
+                        android:textColor="@color/_666666"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_wx_code_layout"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="23dp"
+                    android:drawableStart="@mipmap/icon_wechat"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="微信收款码"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <!--显示微信付款码-->
+
+            <RelativeLayout
+                android:id="@+id/rl_wx_layout"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="40dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/rl_wx_code_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_wx_code"
+                        android:layout_width="122dp"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:maxHeight="250dp"
+                        android:padding="2dp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_wx_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_wx_code_layout"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="23dp"
+                    android:drawableStart="@mipmap/icon_wechat"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="微信收款码"
+                    android:textSize="14sp" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_wx_select"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_above="@id/tv_wx_hint"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@mipmap/icon_m_select" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/img_delete_wx"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@mipmap/icon_m_delete"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_withdraw"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_below="@id/rl_code_layout"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="41dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/shape_btn_bgcolor_black"
+            android:text="提现"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_withdraw"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:drawablePadding="3dp"
+            android:text="@string/with_draw_hint"
+            android:textColor="@color/_F59C01"
+            android:textSize="12sp"
+            app:drawableStartCompat="@mipmap/icon_withdraw_hint" />
+    </RelativeLayout>
+
+</layout>

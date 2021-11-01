@@ -1,0 +1,8 @@
+{
+  "ndkVersionFromDsl": "22.1.7171670",
+  "sdkFolder": "/Users/benshuai/Library/Android/sdk",
+  "sideBySideNdkFolderNames": [
+    "20.0.5594570",
+    "21.0.6113669"
+  ]
+}

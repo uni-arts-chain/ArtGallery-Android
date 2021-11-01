@@ -1,0 +1,7 @@
+Executable : /Users/benshuai/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja
+arguments : 
+-C
+/Users/benshuai/StudioProjects/uni-arts-app-Android/app/.cxx/cmake/debug/armeabi-v7a
+Demo
+jvmArgs : 
+

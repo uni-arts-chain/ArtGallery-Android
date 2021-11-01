@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/content_layout"
+        android:layout_width="265dp"
+        android:layout_height="388dp"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/bg_update">
+
+        <TextView
+            android:id="@+id/txt_aum_update_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="187dip"
+            android:text="发现新版本"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_aum_update"
+            android:layout_width="160dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/rounded_rect_theme"
+            android:text="@string/version_update"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txt_aum_update_content"
+            style="@style/txt_333333_13"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_aum_update_version"
+            android:layout_above="@id/btn_aum_update"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:scrollbars="vertical" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/imb_aum_close"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/content_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@mipmap/zhengshu_close" />
+
+</RelativeLayout>

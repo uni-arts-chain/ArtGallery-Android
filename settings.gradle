@@ -1,0 +1,16 @@
+include ':libshot'
+include ':z_file'
+include ':mango'
+include ':app'
+rootProject.name = "GammaRay"
+include ':wallet-inport'
+include ':feature-wallet-impl'
+include ':feature-wallet-api'
+include ':feature-onboarding-impl'
+include ':feature-onboarding-api'
+include ':common', ':feature-splash', ':core-db', ':library-arouter'
+include ':feature-account-api'
+include ':feature-account-impl'
+include ':picture_library',"ucrop"
+//include ':lib'
+//,':takephoto_library'

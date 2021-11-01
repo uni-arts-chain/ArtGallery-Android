@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="common_font_size_title">18sp</dimen>
+    <dimen name="common_page_padding">10dp</dimen>
+    <dimen name="common_area_margin_middle">8dp</dimen>
+    <dimen name="common_area_margin_tiny">5dp</dimen>
+    <dimen name="common_toolbar_height">50dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="picker_view_height">160dp</dimen>
+    <dimen name="date_unit_text_size">18sp</dimen>
+
+</resources>

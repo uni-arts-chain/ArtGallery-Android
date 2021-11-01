@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gammaray">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- 8.0安装apk权限，需要允许安装未知应用 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> <!--  -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- 必加权限  权限 -->
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" /> <!--  -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 允许程序设置内置sd卡的写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 用于获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- z震动权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <queries>
+        <package android:name="com.eg.android.AlipayGphone" />
+        <package android:name="hk.alipay.wallet" />
+    </queries>
+
+    <application
+        android:name="com.gammaray.base.YunApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:theme">
+        <activity
+            android:name="com.gammaray.ui.activity.order.AuctionOrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.AuctionRuleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.AuctionRecordsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.user.CreateAuctionOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.OfferPriceListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.GoAuctionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.wallet.WithdrawActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.CashAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.ZipFileSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.wallet.ImportWalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.video.VideoPlayerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeFullscreen" />
+        <activity
+            android:name="com.gammaray.ui.activity.QrScanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.TransferActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.UserAgreementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.PinCodeKtActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.ETHPinCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.PinCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.wallet.ExportConfirmActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.x5.ExplorerWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.wallet.ConfirmMnemonicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.wallet.BackUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.wallet.WalletEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.ShowNetBigImgActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeFullscreen" />
+        <activity
+            android:name="com.gammaray.ui.activity.ShowBigImgActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeFullscreen" />
+        <activity
+            android:name="com.gammaray.ui.activity.ExchangeNFTActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.x5.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.x5.X5WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.x5.X5WebViewForAliPayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.user.SellArtUnCutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.NoticeInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.wallet.WalletSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.art.ShowLiveActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeFullscreen" />
+        <activity
+            android:name="com.gammaray.ui.activity.blindbox.BlindBoxRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.blindbox.BlindBoxDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.user.SellArtActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.user.UserHomePageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.user.CreateOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.user.CreateOrderForBlindBoxActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.wallet.ExportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.user.MyOrgnazitionListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.user.UserDescActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.order.OrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.user.UploadArtActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.user.EditNickNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.user.MyOrgnazitionAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.AdviceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.wallet.AcountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.user.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.CustomerServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.user.MessagesActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.gammaray.service.PushIntentService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="com.gammaray.service.MessagePushService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":pushservice" />
+
+        <activity
+            android:name="com.gammaray.ui.activity.ConfirmDocumentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.VerifiedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.user.BindPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.ResetPswStep2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.ResetPswActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.CoinWalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.LinkSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.OrganDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.art.ArtDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.art.AuctionArtDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.SelectPicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.CertificateApplyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.ApplyCertificateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.user.MyHomePageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.UpdatePictureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.user.UserCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gammaray.ui.activity.GuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.wallet.ExportKeystoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.user.FollowAndFansActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.order.SellAndBuyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.user.MyCollectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.WalletLinksActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.SelectedWalletsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.ETHImportWalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.WalletsDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.WalletExportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.BackUpETHMnemonicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.ExportKeyStoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.DAppsListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.RecentlyDAppsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.CollectedDAppsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.DAppSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.ChainRecommendDAppsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.ChainFunctionDAppsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.DAppWebsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gammaray.ui.activity.ETHTransDetailActivity"
+            android:screenOrientation="portrait" />
+        <meta-data
+            android:name="com.gammaray.utils.CustomGlideModule"
+            android:value="AppGlideModule" />
+
+        <activity
+            android:name="jp.co.soramitsu.app.root.presentation.RootActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Soramitsu.Fearless"
+            android:windowSoftInputMode="adjustResize" />
+
+        <receiver
+            android:name="jp.co.soramitsu.feature_account_impl.presentation.exporting.json.confirm.ShareCompletedReceiver"
+            android:enabled="true"
+            android:exported="false"
+            tools:ignore="WrongManifestParent" />
+
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/Theme.Soramitsu.Fearless"
+            tools:ignore="WrongManifestParent"
+            tools:replace="android:theme,screenOrientation" />
+
+        <service
+            android:name="com.gammaray.service.DownLoadService"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>
