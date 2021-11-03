@@ -12,7 +12,7 @@
         android:layout_marginBottom="30dp"
         android:gravity="center"
         android:text="暂无出价记录～"
-        android:textColor="@color/gray2"
+        android:textColor="@color/gray_line"
         android:textSize="@dimen/sp_12" />
 
 </LinearLayout>

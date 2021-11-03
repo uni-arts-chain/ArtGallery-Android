@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="17dp"
             android:layout_marginRight="16dp"
-            android:src="@drawable/icon_close" />
+            android:src="@mipmap/icon_close" />
     </LinearLayout>
 
     <TextView

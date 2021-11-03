@@ -10,5 +10,7 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="picker_view_height">160dp</dimen>
     <dimen name="date_unit_text_size">18sp</dimen>
-
+    <dimen name="dot_stroke_width">2dp</dimen>
+    <dimen name="dot_progress_view_dot_size_default">12dp</dimen>
+    <dimen name="dot_progress_view_dot_margin_default">14dp</dimen>
 </resources>

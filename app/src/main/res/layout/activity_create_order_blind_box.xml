@@ -116,7 +116,7 @@
                                 android:ellipsize="end"
                                 android:gravity="bottom"
                                 android:singleLine="true"
-                                android:textColor="@color/red"
+                                android:textColor="@color/zfile_red"
                                 android:textSize="@dimen/sp_14" />
 
 
@@ -283,7 +283,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/dp_10"
                         android:text="@string/text_buy_amount"
-                        android:textColor="@color/deep_red"
+                        android:textColor="@color/zfile_red"
                         android:textSize="@dimen/sp_15" />
                 </LinearLayout>
 

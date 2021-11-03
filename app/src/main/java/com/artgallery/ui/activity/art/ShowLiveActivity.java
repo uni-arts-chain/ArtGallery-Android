@@ -1,10 +1,8 @@
 package com.artgallery.ui.activity.art;
 
-import androidx.annotation.Nullable;
-import androidx.annotation.RequiresApi;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.media.projection.MediaProjectionManager;
@@ -18,18 +16,19 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
 
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
+
 import com.androidyuan.lib.screenshot.Shooter;
+import com.artgallery.GLRenderer;
+import com.artgallery.JniBridgeJava;
+import com.artgallery.base.YunApplication;
+import com.artgallery.utils.FileHelper;
 import com.blankj.utilcode.util.BarUtils;
 import com.blankj.utilcode.util.FileUtils;
 import com.blankj.utilcode.util.ImageUtils;
 import com.blankj.utilcode.util.LogUtils;
 import com.blankj.utilcode.util.ToastUtils;
-import com.upbest.arouter.EventBusMessageEvent;
-import com.upbest.arouter.EventEntity;
-import com.artgallery.GLRenderer;
-import com.artgallery.JniBridgeJava;
-import com.artgallery.base.YunApplication;
-import com.artgallery.utils.FileHelper;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -98,20 +97,20 @@ public class ShowLiveActivity extends Activity {
         JniBridgeJava.nativeOnStart();
     }
 
-    @Subscribe(threadMode = ThreadMode.MAIN)
-    public void onEvent(com.upbest.arouter.EventBusMessageEvent eventBusMessageEvent) {
-        if (eventBusMessageEvent != null) {
-            if (eventBusMessageEvent.getmMessage().equals(EventEntity.EVENT_LIVE_CLOSE)) {
-                //refresh token
-                if(isFromDetail){
-                    finish();
-                }else{
-                    if (!hasScreenShot)
-                        handler.sendEmptyMessage(0);
-                }
-            }
-        }
-    }
+//    @Subscribe(threadMode = ThreadMode.MAIN)
+//    public void onEvent(com.upbest.arouter.EventBusMessageEvent eventBusMessageEvent) {
+//        if (eventBusMessageEvent != null) {
+//            if (eventBusMessageEvent.getmMessage().equals(EventEntity.EVENT_LIVE_CLOSE)) {
+//                //refresh token
+//                if(isFromDetail){
+//                    finish();
+//                }else{
+//                    if (!hasScreenShot)
+//                        handler.sendEmptyMessage(0);
+//                }
+//            }
+//        }
+//    }
 
     @Override
     protected void onResume() {
@@ -149,7 +148,7 @@ public class ShowLiveActivity extends Activity {
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     private Intent createScreenCaptureIntent() {
-        return ((MediaProjectionManager) getSystemService("media_projection")).createScreenCaptureIntent();
+        return ((MediaProjectionManager) getSystemService(Context.MEDIA_PROJECTION_SERVICE)).createScreenCaptureIntent();
     }
 
 
@@ -170,7 +169,7 @@ public class ShowLiveActivity extends Activity {
                             boolean saveSuc = ImageUtils.save(bitmap, newPath, Bitmap.CompressFormat.PNG, false);
                             if (saveSuc) {
                                 FileUtils.delete(path);
-                                EventBus.getDefault().post(new EventBusMessageEvent(EventEntity.EVENT_SCREEN_SHORT, newPath));
+//                                EventBus.getDefault().post(new EventBusMessageEvent(EventEntity.EVENT_SCREEN_SHORT, newPath));
                             } else ToastUtils.showShort("save fail");
 //                            YunApplication.path = path;
                             if (!TextUtils.isEmpty(path))

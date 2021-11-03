@@ -26,7 +26,7 @@
         android:layout_below="@id/tv_app_name"
         android:layout_marginTop="5dp"
         android:layout_toRightOf="@id/img_app_icon"
-        android:textColor="@color/text_gray"
+        android:textColor="@color/gray_line"
         android:textSize="12sp" />
 
     <View

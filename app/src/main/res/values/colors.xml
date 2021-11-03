@@ -47,11 +47,11 @@
     <color name="_C5C5C5">#C5C5C5</color>
     <color name="_FFCC5E">#FFCC5E</color>
     <color name="_00DEBC">#00DEBC</color>
-    <color name="_F59C01">#F59C01</color>
     <color name="_D70000">#D70000</color>
     <color name="date_picker_bg">#FFFFFF</color>
     <color name="date_picker_divider">#11112233</color>
     <color name="date_picker_text_dark">#333333</color>
     <color name="_627EEA">#627EEA</color>
-    <color name="_FFB432">#FFB432</color>
+    <color name="_6077DF">#6077DF</color>
+    <color name="derive_private_key_bg_color">#f2f3f5</color>
 </resources>

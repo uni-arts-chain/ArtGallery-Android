@@ -195,10 +195,10 @@
             android:layout_below="@id/v_line1"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
-            android:drawableLeft="@drawable/icon_wallet_import_notice"
+            android:drawableLeft="@mipmap/icon_wallet_import_notice"
             android:drawablePadding="5dp"
-            android:text="@string/username_setup_hint"
-            android:textColor="@color/text_gray"
+            android:text="此账户的名称将会在您的地址下显示"
+            android:textColor="@color/_999999"
             android:textSize="12sp" />
 
         <RelativeLayout
@@ -216,7 +216,7 @@
                 android:id="@+id/tv_raw_hint"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/text_gray"
+                android:textColor="@color/_999999"
                 android:layout_margin="10dp"
                 android:textSize="13sp" />
 

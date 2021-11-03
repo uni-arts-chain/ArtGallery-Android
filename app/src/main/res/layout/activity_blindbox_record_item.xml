@@ -134,7 +134,7 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="@dimen/dp_10"
                 android:text="time"
-                android:textColor="@color/red"
+                android:textColor="@color/zfile_red"
                 android:textSize="@dimen/sp_13" />
 
             <TextView

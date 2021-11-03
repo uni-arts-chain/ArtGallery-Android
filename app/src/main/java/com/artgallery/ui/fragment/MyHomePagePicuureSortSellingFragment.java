@@ -16,9 +16,7 @@ import com.artgallery.entity.BaseResponseVo;
 import com.artgallery.entity.SellingArtVo;
 import com.artgallery.net.MinerCallback;
 import com.artgallery.net.RequestManager;
-import com.artgallery.ui.activity.TransferActivity;
 import com.artgallery.ui.activity.art.ArtDetailActivity;
-import com.artgallery.ui.activity.user.SellArtActivity;
 
 import java.util.HashMap;
 import java.util.List;
@@ -87,14 +85,14 @@ public class MyHomePagePicuureSortSellingFragment extends BaseFragment<FragmentM
             }
 
             if (view.getId() == R.id.sellAction) {
-                Bundle bundle = new Bundle();
-                bundle.putInt(ArtDetailActivity.ART_ID, sellingArtVo.getId());
-                bundle.putSerializable(SellArtActivity.ARTINFO, sellingArtVo);
-                startActivity(ArtDetailActivity.class, bundle);
+//                Bundle bundle = new Bundle();
+//                bundle.putInt(ArtDetailActivity.ART_ID, sellingArtVo.getId());
+//                bundle.putSerializable(SellArtActivity.ARTINFO, sellingArtVo);
+//                startActivity(ArtDetailActivity.class, bundle);
             } else if (view.getId() == R.id.transferAction) {
-                Bundle bundle = new Bundle();
-                bundle.putSerializable(SellArtActivity.ARTINFO, sellingArtVo);
-                startActivity(TransferActivity.class, bundle);
+//                Bundle bundle = new Bundle();
+//                bundle.putSerializable(SellArtActivity.ARTINFO, sellingArtVo);
+//                startActivity(TransferActivity.class, bundle);
             }
 
         });

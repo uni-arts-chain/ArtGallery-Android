@@ -16,11 +16,7 @@ import com.artgallery.entity.BaseResponseVo;
 import com.artgallery.entity.SellingArtVo;
 import com.artgallery.net.MinerCallback;
 import com.artgallery.net.RequestManager;
-import com.artgallery.ui.activity.GoAuctionActivity;
-import com.artgallery.ui.activity.TransferActivity;
 import com.artgallery.ui.activity.art.ArtDetailActivity;
-import com.artgallery.ui.activity.user.SellArtActivity;
-import com.artgallery.ui.activity.user.SellArtUnCutActivity;
 import com.artgallery.widget.UploadSuccessPopUpWindow;
 
 import org.greenrobot.eventbus.EventBus;
@@ -102,22 +98,22 @@ public class MyHomePagePicuureSortFragment extends BaseFragment<FragmentMyPagePi
                 sellingArtVo = artVoList.get(position);
             }
             if (view.getId() == R.id.sellAction) {
-                Bundle bundle = new Bundle();
-                bundle.putSerializable(SellArtActivity.ARTINFO, sellingArtVo);
-                bundle.putBoolean("is_from_detail", false);
-                if (sellingArtVo.getCollection_mode() == CUT_MODE) {
-                    startActivity(SellArtActivity.class, bundle);
-                } else {
-                    startActivity(SellArtUnCutActivity.class, bundle);
-                }
+//                Bundle bundle = new Bundle();
+//                bundle.putSerializable(SellArtActivity.ARTINFO, sellingArtVo);
+//                bundle.putBoolean("is_from_detail", false);
+//                if (sellingArtVo.getCollection_mode() == CUT_MODE) {
+//                    startActivity(SellArtActivity.class, bundle);
+//                } else {
+//                    startActivity(SellArtUnCutActivity.class, bundle);
+//                }
             } else if (view.getId() == R.id.transferAction) {
-                Bundle bundle = new Bundle();
-                bundle.putSerializable(SellArtActivity.ARTINFO, sellingArtVo);
-                startActivity(TransferActivity.class, bundle);
+//                Bundle bundle = new Bundle();
+//                bundle.putSerializable(SellArtActivity.ARTINFO, sellingArtVo);
+//                startActivity(TransferActivity.class, bundle);
             } else if (view.getId() == R.id.auctionAction) {
-                Bundle bundle = new Bundle();
-                bundle.putSerializable(SellArtActivity.ARTINFO, sellingArtVo);
-                startActivity(GoAuctionActivity.class, bundle);
+//                Bundle bundle = new Bundle();
+//                bundle.putSerializable(SellArtActivity.ARTINFO, sellingArtVo);
+//                startActivity(GoAuctionActivity.class, bundle);
             }
         });
         mBinding.swipeRefresh.setOnRefreshListener(this::queryArts);

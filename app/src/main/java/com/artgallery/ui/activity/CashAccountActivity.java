@@ -17,7 +17,6 @@ import com.artgallery.entity.BaseResponseVo;
 import com.artgallery.entity.HistoriesBean;
 import com.artgallery.net.MinerCallback;
 import com.artgallery.net.RequestManager;
-import com.artgallery.ui.activity.wallet.WithdrawActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -166,9 +165,9 @@ public class CashAccountActivity extends BaseActivity<ActivityCashAccountLayoutB
                 ToastUtils.showShort("没有可用余额");
                 return;
             }
-            Intent intent = new Intent(CashAccountActivity.this,WithdrawActivity.class);
-            intent.putExtra("remains",accountRemain);
-            startActivity(intent);
+//            Intent intent = new Intent(CashAccountActivity.this,WithdrawActivity.class);
+//            intent.putExtra("remains",accountRemain);
+//            startActivity(intent);
         }
     }
 }

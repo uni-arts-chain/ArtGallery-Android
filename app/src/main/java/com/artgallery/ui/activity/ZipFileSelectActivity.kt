@@ -3,12 +3,12 @@ package com.artgallery.ui.activity
 import android.app.Activity
 import android.content.Intent
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.blankj.utilcode.util.ToastUtils
 import com.artgallery.R
 import com.artgallery.adapter.FileListAdapter
 import com.artgallery.base.BaseActivity
 import com.artgallery.base.ToolBarOptions
 import com.artgallery.databinding.ActivityZipSelectBinding
+import com.artgallery.utils.ToastManager
 import com.zp.z_file.async.ZFileAsyncImpl
 import com.zp.z_file.content.ZFileBean
 import kotlinx.android.synthetic.main.activity_zip_select.*
@@ -34,7 +34,7 @@ class ZipFileSelectActivity : BaseActivity<ActivityZipSelectBinding>() {
 
         ZFileAsyncImpl(this) {
             if (isNullOrEmpty()) {
-                ToastUtils.showShort("未找到zip文件")
+                ToastManager.showShort("未找到zip文件")
             } else {
                 initList(this as ArrayList<ZFileBean>)
             }

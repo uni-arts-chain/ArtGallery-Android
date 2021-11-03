@@ -29,7 +29,7 @@
             android:paddingTop="15dp"
             android:paddingRight="15dp"
             android:text="全部"
-            android:textColor="@color/text_gray"
+            android:textColor="@color/gray_line"
             android:textSize="14sp" />
 
     </RelativeLayout>

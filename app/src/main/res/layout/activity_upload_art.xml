@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dp_15"
                 android:text="基本信息"
-                android:textColor="@color/text_black_dark"
+                android:textColor="@color/_101010"
                 android:textSize="@dimen/sp_15"
                 android:visibility="gone" />
 
@@ -289,7 +289,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/dp_15"
                 android:text="作品标题"
-                android:textColor="@color/text_black_dark"
+                android:textColor="@color/_101010"
                 android:textSize="@dimen/sp_15" />
 
             <RelativeLayout
@@ -484,7 +484,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dp_15"
                 android:text="作品评析"
-                android:textColor="@color/text_black_dark"
+                android:textColor="@color/_101010"
                 android:textSize="@dimen/sp_15" />
 
             <LinearLayout
@@ -523,7 +523,7 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="15dp"
                 android:text="作品图片（可选）"
-                android:textColor="@color/text_black_dark"
+                android:textColor="@color/_101010"
                 android:textSize="@dimen/sp_15" />
 
             <LinearLayout
@@ -823,7 +823,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dp_15"
                 android:text="其他信息"
-                android:textColor="@color/text_black_dark"
+                android:textColor="@color/_101010"
                 android:textSize="@dimen/sp_15"
                 android:visibility="gone" />
 

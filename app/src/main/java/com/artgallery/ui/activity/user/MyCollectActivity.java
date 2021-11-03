@@ -1,8 +1,6 @@
 package com.artgallery.ui.activity.user;
 
 
-import android.content.Context;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,8 +9,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
-import com.blankj.utilcode.util.LogUtils;
-import com.igexin.sdk.PushManager;
 import com.artgallery.R;
 import com.artgallery.adapter.CollectionAdapter;
 import com.artgallery.base.BaseActivity;
@@ -23,18 +19,10 @@ import com.artgallery.entity.CollectArtVo;
 import com.artgallery.net.MinerCallback;
 import com.artgallery.net.RequestManager;
 import com.artgallery.ui.activity.art.ArtDetailActivity;
-import com.artgallery.utils.SharedPreUtils;
-
-import org.bouncycastle.util.encoders.Hex;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
-import jp.co.soramitsu.fearless_utils.encrypt.EncryptionType;
-import jp.co.soramitsu.fearless_utils.encrypt.SignatureWrapper;
-import jp.co.soramitsu.fearless_utils.encrypt.Signer;
-import jp.co.soramitsu.fearless_utils.encrypt.model.Keypair;
 import retrofit2.Call;
 import retrofit2.Response;
 
@@ -121,29 +109,29 @@ public class MyCollectActivity extends BaseActivity<ActivityMyCollectBinding> {
 
     }
 
-    private void getRaw() {
-        SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFERENCES_FILE, Context.MODE_PRIVATE);
-
-
-        String address = SharedPreUtils.getString(this, SharedPreUtils.KEY_ADDRESS);
-        String seed = SharedPreUtils.getString(this, SharedPreUtils.KEY_SEED);
-        String publicKey = SharedPreUtils.getString(this, SharedPreUtils.KEY_PUBLICKEY);
-        String privateKey = SharedPreUtils.getString(this, SharedPreUtils.KEY_PRIVATE);
-        String seedst = seed.substring(2);
-        String nonce = "4092de3e07c259de3904634415177bc07135446ed7d84e43ff246025780c0af1";
-        Keypair keypair = new Keypair(Hex.decode(privateKey), Hex.decode(publicKey), Hex.decode(nonce));
-        Signer signer = new Signer();
-        SignatureWrapper signatureWrapper = signer.sign(EncryptionType.SR25519, address.getBytes(), keypair);
-        String singStr2 = Hex.toHexString(signatureWrapper.getSignature());
-        LogUtils.e("sinStr22 == " + singStr2);
-        HashMap<String, String> hashMap = new HashMap<>();
-        hashMap.put("address", SharedPreUtils.getString(this, SharedPreUtils.KEY_ADDRESS));
-        hashMap.put("message", SharedPreUtils.getString(this, SharedPreUtils.KEY_ADDRESS));
-        hashMap.put("signature", singStr2);
-        hashMap.put("cid", PushManager.getInstance().getClientid(this));
-        hashMap.put("os", "android");
-
-    }
+//    private void getRaw() {
+//        SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFERENCES_FILE, Context.MODE_PRIVATE);
+//
+//
+//        String address = SharedPreUtils.getString(this, SharedPreUtils.KEY_ADDRESS);
+//        String seed = SharedPreUtils.getString(this, SharedPreUtils.KEY_SEED);
+//        String publicKey = SharedPreUtils.getString(this, SharedPreUtils.KEY_PUBLICKEY);
+//        String privateKey = SharedPreUtils.getString(this, SharedPreUtils.KEY_PRIVATE);
+//        String seedst = seed.substring(2);
+//        String nonce = "4092de3e07c259de3904634415177bc07135446ed7d84e43ff246025780c0af1";
+//        Keypair keypair = new Keypair(Hex.decode(privateKey), Hex.decode(publicKey), Hex.decode(nonce));
+//        Signer signer = new Signer();
+//        SignatureWrapper signatureWrapper = signer.sign(EncryptionType.SR25519, address.getBytes(), keypair);
+//        String singStr2 = Hex.toHexString(signatureWrapper.getSignature());
+//        LogUtils.e("sinStr22 == " + singStr2);
+//        HashMap<String, String> hashMap = new HashMap<>();
+//        hashMap.put("address", SharedPreUtils.getString(this, SharedPreUtils.KEY_ADDRESS));
+//        hashMap.put("message", SharedPreUtils.getString(this, SharedPreUtils.KEY_ADDRESS));
+//        hashMap.put("signature", singStr2);
+//        hashMap.put("cid", PushManager.getInstance().getClientid(this));
+//        hashMap.put("os", "android");
+//
+//    }
 
     private View mEmptyView;
 

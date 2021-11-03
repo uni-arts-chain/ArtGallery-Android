@@ -13,7 +13,7 @@
         android:drawablePadding="@dimen/common_area_margin_middle"
         android:gravity="center"
         android:text="空空如也~"
-        android:textColor="@color/gray2"
+        android:textColor="@color/gray_line"
         android:textSize="@dimen/sp_12" />
 
 </LinearLayout>

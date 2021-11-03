@@ -7,9 +7,6 @@ import com.artgallery.adapter.BackUpMnemonicAdapter;
 import com.artgallery.base.BaseActivity;
 import com.artgallery.base.ToolBarOptions;
 import com.artgallery.databinding.ActivityBackupEthMnemonicLayoutBinding;
-import com.artgallery.ui.activity.wallet.ConfirmMnemonicActivity;
-import com.upbest.arouter.EventBusMessageEvent;
-import com.upbest.arouter.EventEntity;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -51,16 +48,16 @@ public class BackUpETHMnemonicActivity extends BaseActivity<ActivityBackupEthMne
         mDataBinding.btnNext.setOnClickListener(view -> {
             Bundle bundle = new Bundle();
             bundle.putStringArrayList("list", mnemonics);
-            startActivity(ConfirmMnemonicActivity.class, bundle);
+//            startActivity(ConfirmMnemonicActivity.class, bundle);
         });
     }
 
-    @Subscribe(threadMode = ThreadMode.MAIN)
-    public void onEvent(EventBusMessageEvent eventBusMessageEvent) {
-        if (eventBusMessageEvent.getmMessage().equals(EventEntity.EVENT_BACKUP_SUCCESS)) {
-            finish();
-        }
-    }
+//    @Subscribe(threadMode = ThreadMode.MAIN)
+//    public void onEvent(EventBusMessageEvent eventBusMessageEvent) {
+//        if (eventBusMessageEvent.getmMessage().equals(EventEntity.EVENT_BACKUP_SUCCESS)) {
+//            finish();
+//        }
+//    }
 
     @Override
     protected void onDestroy() {

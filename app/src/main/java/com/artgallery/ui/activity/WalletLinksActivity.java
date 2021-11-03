@@ -9,13 +9,8 @@ import com.artgallery.base.BaseActivity;
 import com.artgallery.base.ToolBarOptions;
 import com.artgallery.databinding.ActivityWalletLinksLayoutBinding;
 import com.artgallery.entity.WalletLinkBean;
-import com.artgallery.ui.activity.wallet.AcountActivity;
-import com.upbest.arouter.EventBusMessageEvent;
-import com.upbest.arouter.EventEntity;
 
 import org.greenrobot.eventbus.EventBus;
-import org.greenrobot.eventbus.Subscribe;
-import org.greenrobot.eventbus.ThreadMode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -55,21 +50,21 @@ public class WalletLinksActivity extends BaseActivity<ActivityWalletLinksLayoutB
 
         mAdapter.setOnItemClickListener((adapter, view, position) -> {
             if (position == 0) {
-                startActivity(AcountActivity.class);
+//                startActivity(AcountActivity.class);
             } else if (position == 1) {
                 startActivity(SelectedWalletsActivity.class);
             }
         });
     }
 
-    @Subscribe(threadMode = ThreadMode.MAIN)
-    public void onEvent(EventBusMessageEvent eventBusMessageEvent) {
-        if (eventBusMessageEvent != null) {
-            if (eventBusMessageEvent.getmMessage().equals(EventEntity.EVENT_IMPORT_ETH_SUCCESS)) {
-                finish();
-            }
-        }
-    }
+//    @Subscribe(threadMode = ThreadMode.MAIN)
+//    public void onEvent(EventBusMessageEvent eventBusMessageEvent) {
+//        if (eventBusMessageEvent != null) {
+//            if (eventBusMessageEvent.getmMessage().equals(EventEntity.EVENT_IMPORT_ETH_SUCCESS)) {
+//                finish();
+//            }
+//        }
+//    }
 
     @Override
     protected void onDestroy() {

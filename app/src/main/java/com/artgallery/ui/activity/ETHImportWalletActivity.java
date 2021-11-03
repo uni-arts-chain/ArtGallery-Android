@@ -12,7 +12,6 @@ import android.widget.PopupWindow;
 
 import androidx.annotation.Nullable;
 
-import com.blankj.utilcode.util.ToastUtils;
 import com.artgallery.R;
 import com.artgallery.base.BaseActivity;
 import com.artgallery.base.ToolBarOptions;
@@ -22,15 +21,9 @@ import com.artgallery.eth.interact.CreateWalletInteract;
 import com.artgallery.eth.util.ETHWalletUtils;
 import com.artgallery.utils.SharedPreUtils;
 import com.artgallery.widget.BasePopupWindow;
-import com.upbest.arouter.EventBusMessageEvent;
-import com.upbest.arouter.EventEntity;
+import com.blankj.utilcode.util.ToastUtils;
 
 import org.greenrobot.eventbus.EventBus;
-import org.greenrobot.eventbus.Subscribe;
-import org.greenrobot.eventbus.ThreadMode;
-
-import static com.artgallery.ui.activity.wallet.WalletEditActivity.RESUME_CER;
-import static com.artgallery.ui.activity.wallet.WalletEditActivity.SET_CER;
 
 /*
  * ETH钱包导入页面
@@ -130,8 +123,8 @@ public class ETHImportWalletActivity extends BaseActivity<ActivityEthImportWalle
             return;
         }
         Intent intent = new Intent(ETHImportWalletActivity.this, PinCodeKtActivity.class);
-        intent.putExtra(RESUME_CER, true);
-        intent.putExtra(SET_CER, true);
+//        intent.putExtra(RESUME_CER, true);
+//        intent.putExtra(SET_CER, true);
 
         startActivityForResult(intent, mDefaultImportType);
     }
@@ -180,7 +173,7 @@ public class ETHImportWalletActivity extends BaseActivity<ActivityEthImportWalle
 
     private void loadSuccess(ETHWallet wallet) {
         finish();
-        EventBus.getDefault().post(new EventBusMessageEvent(EventEntity.EVENT_IMPORT_ETH_SUCCESS, null));
+//        EventBus.getDefault().post(new EventBusMessageEvent(EventEntity.EVENT_IMPORT_ETH_SUCCESS, null));
 //        ToastUtils.showShort("导入钱包成功");
     }
 
@@ -188,10 +181,10 @@ public class ETHImportWalletActivity extends BaseActivity<ActivityEthImportWalle
         ToastUtils.showShort("导入钱包失败");
     }
 
-    @Subscribe(threadMode = ThreadMode.MAIN)
-    public void onEvent(EventBusMessageEvent eventBusMessageEvent) {
-
-    }
+//    @Subscribe(threadMode = ThreadMode.MAIN)
+//    public void onEvent(EventBusMessageEvent eventBusMessageEvent) {
+//
+//    }
 
     /**
      * 隐藏键盘

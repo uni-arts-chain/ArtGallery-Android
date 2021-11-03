@@ -3,7 +3,6 @@ package com.artgallery.ui.fragment;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -12,31 +11,21 @@ import android.widget.Button;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.blankj.utilcode.util.ClickUtils;
-import com.blankj.utilcode.util.ToastUtils;
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.RequestOptions;
-import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.artgallery.ui.activity.WalletLinksActivity;
-import com.google.gson.Gson;
-import com.neovisionaries.ws.client.WebSocketFactory;
-import com.upbest.arouter.Extras;
 import com.artgallery.R;
 import com.artgallery.adapter.MineActionAdapter;
 import com.artgallery.base.BaseFragment;
 import com.artgallery.base.YunApplication;
-import com.artgallery.constant.AppConstant;
 import com.artgallery.databinding.FragmentMineBinding;
 import com.artgallery.entity.AccountVo;
 import com.artgallery.entity.AuctionArtVo;
 import com.artgallery.entity.BaseResponseVo;
-import com.artgallery.entity.StdoutLogger;
 import com.artgallery.entity.UserVo;
 import com.artgallery.net.MinerCallback;
 import com.artgallery.net.RequestManager;
 import com.artgallery.ui.activity.AuctionRecordsActivity;
 import com.artgallery.ui.activity.CashAccountActivity;
 import com.artgallery.ui.activity.ExchangeNFTActivity;
+import com.artgallery.ui.activity.WalletLinksActivity;
 import com.artgallery.ui.activity.order.SellAndBuyActivity;
 import com.artgallery.ui.activity.user.FollowAndFansActivity;
 import com.artgallery.ui.activity.user.MessagesActivity;
@@ -44,15 +33,15 @@ import com.artgallery.ui.activity.user.MyCollectActivity;
 import com.artgallery.ui.activity.user.MyHomePageActivity;
 import com.artgallery.ui.activity.user.SettingsActivity;
 import com.artgallery.ui.activity.user.UploadArtActivity;
-import com.artgallery.ui.activity.wallet.AcountActivity;
-import com.artgallery.utils.SharedPreUtils;
+import com.blankj.utilcode.util.ClickUtils;
+import com.blankj.utilcode.util.ToastUtils;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
+import com.chad.library.adapter.base.BaseQuickAdapter;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.util.Arrays;
 import java.util.List;
 
-import jp.co.soramitsu.fearless_utils.wsrpc.SocketService;
 import retrofit2.Call;
 import retrofit2.Response;
 
@@ -72,7 +61,6 @@ MineFragment extends BaseFragment<FragmentMineBinding> implements View.OnClickLi
     public static final int NEWS = 7;
     public static final int CASH_ACCOUNT = 8;
 
-    SocketService socketService;
     long lastClickTime = 0;
     private long time_space = 1000 * 1;
     private String accountRemain = "0";
@@ -100,8 +88,6 @@ MineFragment extends BaseFragment<FragmentMineBinding> implements View.OnClickLi
         initList();
         View[] views = {mBinding.setting, mBinding.fans, mBinding.follow, mBinding.layoutMainWallet, mBinding.layoutSubWallet, mBinding.mineTitleImg};
         ClickUtils.applyGlobalDebouncing(views, this);
-        socketService = new SocketService(new Gson(), new StdoutLogger(), new WebSocketFactory(), i -> 0);
-        socketService.start(AppConstant.RPC);
     }
 
     public void initList() {
@@ -118,7 +104,6 @@ MineFragment extends BaseFragment<FragmentMineBinding> implements View.OnClickLi
     public void onResume() {
         super.onResume();
         getUserInfo();
-        getBalance();
     }
 
     @SuppressLint("CheckResult")
@@ -164,7 +149,6 @@ MineFragment extends BaseFragment<FragmentMineBinding> implements View.OnClickLi
                 break;
 
             case R.id.layout_main_wallet:
-                startActivity(AcountActivity.class);
 
                 break;
             case R.id.layout_sub_wallet:
@@ -280,33 +264,6 @@ MineFragment extends BaseFragment<FragmentMineBinding> implements View.OnClickLi
 
             }
         });
-    }
-
-    private void getBalance() {
-        new getDesc().execute(socketService);
-    }
-
-
-    public class getDesc extends AsyncTask<SocketService, Integer, String> {
-        @Override
-        protected String doInBackground(SocketService... socketServices) {
-            SendIntegrationTest sendIntegrationTest = new SendIntegrationTest();
-            String balance = sendIntegrationTest.getBalance(socketServices[0], SharedPreUtils.getString(mActivity, SharedPreUtils.KEY_ADDRESS));
-            String balanceStr;
-            if (TextUtils.isEmpty(balance)) {
-                balanceStr = "0";
-            } else {
-                balanceStr = new BigDecimal(balance).setScale(4, RoundingMode.DOWN).stripTrailingZeros().toPlainString();
-            }
-            return balanceStr;
-        }
-
-        @Override
-        protected void onPostExecute(String s) {
-            super.onPostExecute(s);
-            Extras.balance = s;
-//            mBinding.mineCount.setText(getString(R.string.mine_acount, s));
-        }
     }
 
     private void queryWinAuctions() {

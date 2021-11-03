@@ -1,24 +1,23 @@
 package com.artgallery.ui.activity;
 
+import android.content.Intent;
+
+import androidx.annotation.Nullable;
+
+import com.alibaba.android.arouter.utils.TextUtils;
+import com.artgallery.MainActivity;
 import com.artgallery.R;
 import com.artgallery.base.BaseActivity;
 import com.artgallery.databinding.ActivityGuideBinding;
+import com.artgallery.utils.SharedPreUtils;
 import com.artgallery.widget.GuideView;
 
-import jp.co.soramitsu.app.root.presentation.RootActivity;
-
-
-/**
- * @Description: 引导页
- * @Author: Houbc
- * @CreateDate: 2020/7/14 10:34
- * @UpdateUser:
- * @UpdateDate:
- * @UpdateRemark:
- * @VersionLog: 1.0
- */
+import jnr.ffi.annotations.In;
 
 public class GuideActivity extends BaseActivity<ActivityGuideBinding> {
+
+    private static final int CREATE_NEW_ACCOUNT = 0;
+
     private final int[] mPageImages = {
             R.mipmap.guide1,
             R.mipmap.guide2,
@@ -55,10 +54,22 @@ public class GuideActivity extends BaseActivity<ActivityGuideBinding> {
 
             @Override
             public void onEnterClickListener() {
-                startActivity(RootActivity.class);
-                finish();
+                Intent intent = new Intent(GuideActivity.this, PinCodeKtActivity.class);
+                intent.putExtra("SET_PASSWORD", true);
+                startActivityForResult(intent, CREATE_NEW_ACCOUNT);
             }
         });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == CREATE_NEW_ACCOUNT) {
+            if (!TextUtils.isEmpty(SharedPreUtils.getString(this, SharedPreUtils.ACCOUNT_KEY_PIN))) {
+                startActivity(MainActivity.class);
+                finish();
+            }
+        }
     }
 
     @Override

@@ -1,5 +1,6 @@
 package com.artgallery.base;
 
+import android.app.Application;
 import android.content.res.AssetManager;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Environment;
@@ -8,7 +9,6 @@ import android.os.Message;
 import android.widget.Toast;
 
 import com.alibaba.android.arouter.launcher.ARouter;
-import com.blankj.utilcode.util.LogUtils;
 import com.artgallery.constant.AppConstant;
 import com.artgallery.constant.ExtraConstant;
 import com.artgallery.entity.ArtPriceVo;
@@ -26,6 +26,7 @@ import com.artgallery.net.LogInterceptor;
 import com.artgallery.net.NetworkManager;
 import com.artgallery.service.TokenInterceptor;
 import com.artgallery.utils.UserManager;
+import com.blankj.utilcode.util.LogUtils;
 import com.google.gson.Gson;
 import com.igexin.sdk.PushManager;
 import com.tencent.smtt.sdk.QbSdk;
@@ -43,11 +44,10 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import io.realm.Realm;
-import jp.co.soramitsu.app.App;
 import okhttp3.OkHttpClient;
 
 
-public class YunApplication extends App {
+public class YunApplication extends Application {
     private static YunApplication mYunApplicaion;
     public static boolean isLaunch = true;
     public static List<ArtTypeVo> artTypelist;

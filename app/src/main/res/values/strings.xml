@@ -9,7 +9,6 @@
     <string name="edit_hint">请输入关键字搜索作品</string>
     <string name="parameter_error">请求参数错误，请稍候重试</string>
     <string name="artist">作品</string>
-    <string name="mine_acount">区块链积分：%1$s</string>
     <string name="centify_addr">证书地址：%1$s</string>
     <string name="sign_amounts">交易次数：%1$s次</string>
     <string name="create_amount">发行份数：%1$s份</string>
@@ -37,9 +36,7 @@
     <string name="order_bought">实付款:</string>
     <string name="derive_with_keystore">Keystore</string>
     <string name="derive_with_qrcode">二维码</string>
-    <string name="derive_keystore_title">导出Keystore</string>
     <string name="sign_certify">签名证书</string>
-    <string name="import_wallet">导入钱包</string>
     <string name="derive_keystore_tip_title">离线保存</string>
     <string name="derive_keystore_tip_title4">仅供直接扫描</string>
     <string name="derive_keystore_tip4">二维码禁止保存、截图、以及拍照、仅供用户在安全环境下直接扫描来方便的导入钱包。</string>
@@ -52,7 +49,6 @@
     <string name="sign_img">证书照片</string>
     <string name="sign_amountss">签名数</string>
     <string name="progress_loading">加载中...</string>
-    <string name="text_input_amount_null_tips">请设置本次出售价格</string>
     <string name="blind_box_transfering_tips">链上NFT数据正在传输，请稍后再试！</string>
     <string name="blind_box_failed_tips">链上NFT数据传输失败，已付款将原路退回，请注意查收</string>
     <string name="sign_company">签名机构</string>
@@ -90,7 +86,6 @@
     <string name="canel">取消</string>
     <string name="canel_follow">取消关注</string>
     <string name="determine">确定</string>
-    <string name="edit_wallet">编辑钱包</string>
     <string name="user_agreement">隐私协议</string>
     <string name="login_txt">登陆</string>
     <string name="register_txt">注册</string>
@@ -115,7 +110,6 @@
     <string name="send_success">已发送</string>
 
     <string name="derive_private_key_alert">安全警告：私钥未经加密，导出存在风险，建议使用助记词和keystore进行备份</string>
-    <string name="back_up_mnemonic_title">备份助记词</string>
     <!--首页-->
     <string name="certify_search">证书查询</string>
     <string name="certify_search_find">查询</string>
@@ -190,7 +184,6 @@
     <string name="cancle_sell">下架</string>
     <string name="text_downloading">正在下载...</string>
     <string name="text_download_success">下载完成</string>
-    <string name="balance_zero_tips">当前积分为0，无法进行操作\n（购买NFT卡片可获得积分）</string>
     <!--选择作品-->
     <string name="confirm_tips">请选择作品后确认</string>
     <string-array name="my_page_tabs">
@@ -239,7 +232,6 @@
     <string name="fans_num">粉丝 %1$s</string>
     <string name="arts_num">%1$s个作品</string>
     <string name="advice_title">意见反馈</string>
-    <string name="art_tansfer">转让</string>
     <string name="my_orgnaziton">我的机构</string>
     <string name="upload_tips">注意：信息通过审核后无法修改，请谨慎操作</string>
 
@@ -255,7 +247,6 @@
     <string name="form_order">提交订单</string>
     <string name="reacquire_code">%1$d秒后可重新获取</string>
     <string name="send_code_success">发送成功</string>
-    <string name="transfer_last_amount">(余额%1$d)</string>
     <!--TEST-->
 
 
@@ -278,10 +269,6 @@
     <string name="title_detail">详情</string>
     <string name="buy_amount">购买数量</string>
     <string name="text_buy_amount">￥%1$s</string>
-    <string name="text_art_price_now">当前价格</string>
-    <string name="text_this_time_sell_price">本次出售价格</string>
-    <string name="text_art_last">作品库存</string>
-    <string name="text_art_amount">本次出售份数</string>
     <string name="text_is_cut">是否拆开售卖</string>
     <string name="text_cut_price">每份价格:</string>
     <string name="text_set_art_price">设置作品价格:</string>
@@ -315,29 +302,19 @@ UniArts提供技术支持</string>
 
     <string name="text_exchange_code_null_tips">请输入兑换码</string>
 
-    <string name="text_sell_amount_null">请输入本次出售份数</string>
-    <string name="text_sell_cut_price_tips">请设置每份价格</string>
     <string name="pay_result_success">订单支付成功</string>
     <string name="pay_result_fail">订单支付失败</string>
     <string name="pay_result_cancle">订单支付未完成</string>
     <string name="update_version">发现新版本%1$s</string>
 
-    <string name="cash_account">现金账户：¥%1$s</string>
     <string name="total_cash">账户总额：¥%1$s</string>
 
-    <string name="auction_start_price">起拍价</string>
-    <string name="auction_add_unit">加价幅度</string>
-    <string name="auction_start_time">开始时间</string>
-    <string name="auction_end_time">结束时间</string>
-    <string name="auction_pieces">拍卖份数</string>
-    <string name="start_auction">立即发起</string>
     <string name="office_price_count">出价：%1$s次</string>
     <string name="auction_pieces_">拍卖份数：%1$s</string>
     <string name="auction_start_price_">起拍价：¥%1$s</string>
     <string name="auction_add_unit_">加价幅度：¥%1$s</string>
     <string name="auction_start_time_">开始时间：%1$s</string>
     <string name="auction_end_time_">结束时间：%1$s</string>
-    <string name="start_auction_">发起拍卖</string>
     <string name="account_remain_v">(￥%1$s)</string>
     <string name="offer_price_title">出价记录</string>
     <string name="cancel">取消</string>
@@ -349,8 +326,6 @@ UniArts提供技术支持</string>
     <string name="hour">时</string>
     <string name="minute">分</string>
     <string name="cash_account_">现金账户</string>
-    <string name="with_draw">提现</string>
-    <string name="with_draw_hint">申请提现后，资金将会在3个工作日内到账，请注意查收！</string>
     <string name="cancel_auction_hint">是否确认取消拍卖？</string>
     <string name="has_offered_price">您已出价 ¥%1$s</string>
     <string name="need_offered_price">至少还需加价 ¥%1$s</string>
@@ -392,20 +367,15 @@ UniArts提供技术支持</string>
     <string name="mine_trade_record">交易记录</string>
     <string name="dapp_edit_hint">搜索或输入 DApp 网址</string>
 
-    <string-array name="recent_dapps">
-        <item>收藏</item>
-        <item>最近</item>
-    </string-array>
-
-    <string-array name="all_dapps">
-        <item>ETH</item>
-        <item>UART</item>
-    </string-array>
-
     <string name="wallet_link_hint">%1$s正在申请访问你的钱包地址，你确认将钱包地址公开给此网站吗？</string>
     <string name="eth_trans_value">-%1$s ETH</string>
     <string name="eth_gas_price">%1$s Gwei(¥%2$s)</string>
     <string name="eth_dapp_url">(%1$s)</string>
     <string name="eth_for_cny">(¥ %1$s)</string>
     <string name="eth_for_cny_">¥ %1$s</string>
+
+    <string name="pincode_enter_pin_code">请输入密码</string>
+    <string name="derive_keystore_copy">复制 Keystore</string>
+    <string name="derive_keystore_tip3">如需在线保存，则建议使用安全等级更高的 1Password 等密码保管软件保存 Keystore。</string>
+    <string name="derive_keystore_tip_title3">密码保险箱保存</string>
 </resources>

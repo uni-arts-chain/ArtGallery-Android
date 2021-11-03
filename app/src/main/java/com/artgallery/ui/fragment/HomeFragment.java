@@ -1,5 +1,7 @@
 package com.artgallery.ui.fragment;
 
+import static com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions.withCrossFade;
+
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -16,16 +18,6 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
-import com.blankj.utilcode.util.LogUtils;
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.artgallery.eth.interact.CreateWalletInteract;
-import com.google.android.material.appbar.AppBarLayout;
-import com.google.android.material.tabs.TabLayout;
-import com.igexin.sdk.PushManager;
-import com.upbest.arouter.EventBusMessageEvent;
-import com.upbest.arouter.EventEntity;
 import com.artgallery.R;
 import com.artgallery.adapter.HomePageThemeAdapter;
 import com.artgallery.adapter.MyHomePageAdapter;
@@ -41,7 +33,7 @@ import com.artgallery.entity.BannersVo;
 import com.artgallery.entity.BaseResponseVo;
 import com.artgallery.entity.NoRead;
 import com.artgallery.entity.SellingArtVo;
-import com.artgallery.entity.UserVo;
+import com.artgallery.eth.interact.CreateWalletInteract;
 import com.artgallery.net.MinerCallback;
 import com.artgallery.net.RequestManager;
 import com.artgallery.ui.activity.CustomerServiceActivity;
@@ -51,28 +43,20 @@ import com.artgallery.ui.activity.art.ArtDetailActivity;
 import com.artgallery.ui.activity.user.MessagesActivity;
 import com.artgallery.ui.x5.ExplorerWebViewActivity;
 import com.artgallery.utils.DateUtil;
-import com.artgallery.utils.SharedPreUtils;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.chad.library.adapter.base.BaseQuickAdapter;
+import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.tabs.TabLayout;
 import com.zhouwei.mzbanner.holder.MZViewHolder;
-
-import org.bouncycastle.util.encoders.Hex;
-import org.greenrobot.eventbus.EventBus;
-import org.greenrobot.eventbus.Subscribe;
-import org.greenrobot.eventbus.ThreadMode;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
 
-import jp.co.soramitsu.fearless_utils.encrypt.EncryptionType;
-import jp.co.soramitsu.fearless_utils.encrypt.SignatureWrapper;
-import jp.co.soramitsu.fearless_utils.encrypt.Signer;
-import jp.co.soramitsu.fearless_utils.encrypt.model.Keypair;
 import retrofit2.Call;
 import retrofit2.Response;
-
-import static com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions.withCrossFade;
 
 
 public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements View.OnClickListener, BaseQuickAdapter.OnItemClickListener, MyHomePageAdapter.TabPagerListener {
@@ -150,6 +134,8 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
     protected void initView() {
         initRefresh();
         initFragments();
+        initRequest();
+
         searchLayout = mBinding.titleLayout.findViewById(R.id.centerToolbarView);
         searchLayout.setOnClickListener(v -> startActivity(SearchActivity.class));
         noReadFlag = mBinding.titleLayout.findViewById(R.id.noRead);
@@ -175,7 +161,6 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
                 }
             }
         });
-        loginByAddress(false);
     }
 
     private void initFragments() {
@@ -211,7 +196,6 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
         mBinding.srlShoopingMall.setDistanceToTriggerSync(300);
         mBinding.srlShoopingMall.setOnRefreshListener(() -> {
             mBinding.srlShoopingMall.setRefreshing(false);
-            loginByAddress(false);
         });
     }
 
@@ -222,23 +206,6 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
             getBanner();//获取banner
             getNews();//获取新闻
             hasUnReadMessage();//查询唯独消息
-        }
-    }
-
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        EventBus.getDefault().register(this);
-        return super.onCreateView(inflater, container, savedInstanceState);
-    }
-
-    @Subscribe(threadMode = ThreadMode.MAIN)
-    public void onEvent(EventBusMessageEvent eventBusMessageEvent) {
-        if (eventBusMessageEvent != null) {
-            if (eventBusMessageEvent.getmMessage().equals(EventEntity.EVENT_REFRESH_TOKEN)) {
-                //refresh token
-                loginByAddress(true);
-            }
         }
     }
 
@@ -621,51 +588,6 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
             @Override
             public void onError
                     (Call<BaseResponseVo<List<ArtTypeVo>>> call, Response<BaseResponseVo<List<ArtTypeVo>>> response) {
-
-            }
-
-            @Override
-            public void onFailure(Call<?> call, Throwable t) {
-
-            }
-        });
-    }
-
-    public void loginByAddress(boolean refreshToken) {
-        String privateKey = SharedPreUtils.getString(mActivity, SharedPreUtils.KEY_PRIVATE);
-        String publicKey = SharedPreUtils.getString(mActivity, SharedPreUtils.KEY_PUBLICKEY);
-        String nonce = SharedPreUtils.getString(mActivity, SharedPreUtils.KEY_NONCE);
-        String Address = SharedPreUtils.getString(mActivity, SharedPreUtils.KEY_ADDRESS);
-        LogUtils.e(privateKey + "|" + publicKey + "|" + nonce);
-        Keypair keypair = new Keypair(Hex.decode(privateKey), Hex.decode(publicKey), Hex.decode(nonce.substring(2)));
-        Signer signer = new Signer();
-        SignatureWrapper signatureWrapper = signer.sign(EncryptionType.SR25519, Address.getBytes(), keypair);
-        String singStr2 = Hex.toHexString(signatureWrapper.getSignature());
-        HashMap<String, String> hashMap = new HashMap<>();
-        hashMap.put("address", Address);
-        hashMap.put("message", Address);
-        hashMap.put("signature", singStr2);
-        hashMap.put("cid", PushManager.getInstance().getClientid(mActivity));
-        hashMap.put("os", "android");
-        RequestManager.instance().addressLogin(hashMap, new MinerCallback<BaseResponseVo<UserVo>>() {
-            @Override
-            public void onSuccess(Call<BaseResponseVo<UserVo>> call, Response<BaseResponseVo<UserVo>> response) {
-                if (response.isSuccessful()) {
-                    if (response.body() != null)
-                        if (response.body().getBody() != null) {
-                            UserVo userVo = response.body().getBody();
-                            YunApplication.setmUserVo(userVo);
-                            YunApplication.setToken(userVo.getToken());
-                            resume = true;
-                            if (!refreshToken)
-                                initRequest();
-                        }
-                }
-            }
-
-            @Override
-            public void onError
-                    (Call<BaseResponseVo<UserVo>> call, Response<BaseResponseVo<UserVo>> response) {
 
             }
 

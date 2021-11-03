@@ -55,6 +55,7 @@ public class SharedPreUtils {
     public static final String KEY_PRIVATE = "private_key";
     public static final String KEY_PUBLICKEY = "public_key";
     public static final String KEY_PIN = "pin";
+    public static final String ACCOUNT_KEY_PIN = "account_pin";
     public static final String KEY_MNENONIC = "mnemonic";
     public static final String KEY_RPC_URL = "rpc_url";
     public static final String KEY_CHAIN_ID = "chain_id";

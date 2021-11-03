@@ -48,9 +48,6 @@ import com.artgallery.widget.UpdateDialog;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.gson.Gson;
 import com.igexin.sdk.PushManager;
-import com.upbest.arouter.ArouterModelPath;
-import com.upbest.arouter.EventEntity;
-import com.upbest.arouter.Extras;
 
 import org.bouncycastle.util.encoders.Hex;
 import org.greenrobot.eventbus.EventBus;
@@ -62,17 +59,12 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
-import jp.co.soramitsu.fearless_utils.encrypt.EncryptionType;
-import jp.co.soramitsu.fearless_utils.encrypt.SignatureWrapper;
-import jp.co.soramitsu.fearless_utils.encrypt.Signer;
-import jp.co.soramitsu.fearless_utils.encrypt.model.Keypair;
 import permissions.dispatcher.NeedsPermission;
 import permissions.dispatcher.OnNeverAskAgain;
 import permissions.dispatcher.OnPermissionDenied;
 import retrofit2.Call;
 import retrofit2.Response;
 
-@Route(path = ArouterModelPath.MAIN)
 public class MainActivity extends BaseActivity<ActivityMainBinding> {
     private HomeFragment homeFragment;
     private NFTMallFragment nftMallFragment;
@@ -87,6 +79,8 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
     public UpdateDialog mDialog;
     public UpdateDialog mForceDialog;
     public static final String JUMP_PAGE = "jump_page";
+    private static final String DEFAULT_WALLET_NAME = "walletName";
+
     private String isFirstLoad;
     private final CreateWalletInteract createWalletInteract = new CreateWalletInteract();
 
@@ -124,11 +118,9 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
     public void initView() {
         isFirstLoad = CacheDiskStaticUtils.getString(ExtraConstant.KEY_GUIDE_FLAG);
         if (isFirstLoad == null || !isFirstLoad.equals("1")) {
-            createWalletInteract.loadWalletByMnemonic("walletName",ETHWalletUtils.ETH_JAXX_TYPE, Extras.mnemonic, Extras.pinCode, false).
-                    subscribe(this::loadSuccess, this::onError);
+            String password = SharedPreUtils.getString(this, SharedPreUtils.ACCOUNT_KEY_PIN);
+            createWalletInteract.create(DEFAULT_WALLET_NAME, password, password, "", "ETH").subscribe(this::jumpToWalletBackUp, this::showError);
         }
-//        createWalletInteract.loadWalletByMnemonic(ETHWalletUtils.ETH_JAXX_TYPE, Extras.mnemonic, Extras.pinCode, false).
-//                subscribe(this::loadSuccess, this::onError);
         CacheDiskStaticUtils.put(ExtraConstant.KEY_GUIDE_FLAG, "1");
         saveData();
 //        loginByAddress();
@@ -244,17 +236,14 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
         mBottomNavigationView.setItemIconTintList(null);
     }
 
-    public void loadSuccess(ETHWallet wallet) {
-//        ToastUtils.showShort("导入钱包成功");
-//        if (wallet != null) {
-//            ImportWalletActivity.addr = wallet.getAddress();
-//            ImportWalletActivity.name = wallet.getName();
-//        }
-//        getActivity().finish();
+    public void showError(Throwable errorInfo) {
+        dismissLoading();
+        ToastUtils.showShort(errorInfo.toString());
     }
 
-    public void onError(Throwable e) {
-        ToastUtils.showShort("导入钱包失败");
+    public void jumpToWalletBackUp(ETHWallet wallet) {
+        dismissLoading();
+        ToastUtils.showShort("创建钱包成功");
     }
 
     @Override
@@ -263,67 +252,14 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
         EventBus.getDefault().unregister(this);
     }
 
-    @Subscribe(threadMode = ThreadMode.MAIN)
-    public void onEvent(com.upbest.arouter.EventBusMessageEvent eventBusMessageEvent) {
-        if (eventBusMessageEvent != null) {
-            if (eventBusMessageEvent.getmMessage().equals(EventEntity.EVENT_REFRESH_TOKEN)) {
-                //refresh token
-                LogUtils.e("refresh token===");
-                loginByAddress();
-            }
-        }
-    }
-
-    public void loginByAddress() {
-        String privateKey = SharedPreUtils.getString(this, SharedPreUtils.KEY_PRIVATE);
-        String publicKey = SharedPreUtils.getString(this, SharedPreUtils.KEY_PUBLICKEY);
-        String nonce = SharedPreUtils.getString(this, SharedPreUtils.KEY_NONCE);
-        String Address = SharedPreUtils.getString(this, SharedPreUtils.KEY_ADDRESS);
-        LogUtils.e(privateKey + "|" + publicKey + "|" + nonce);
-        Keypair keypair = new Keypair(Hex.decode(privateKey), Hex.decode(publicKey), Hex.decode(nonce.substring(2)));
-        Signer signer = new Signer();
-        SignatureWrapper signatureWrapper = signer.sign(EncryptionType.SR25519, Address.getBytes(), keypair);
-        String singStr2 = Hex.toHexString(signatureWrapper.getSignature());
-        HashMap<String, String> hashMap = new HashMap<>();
-        hashMap.put("address", Address);
-        hashMap.put("message", Address);
-        hashMap.put("signature", singStr2);
-        hashMap.put("cid", PushManager.getInstance().getClientid(this));
-        hashMap.put("os", "android");
-        RequestManager.instance().addressLogin(hashMap, new MinerCallback<BaseResponseVo<UserVo>>() {
-            @Override
-            public void onSuccess(Call<BaseResponseVo<UserVo>> call, Response<BaseResponseVo<UserVo>> response) {
-                if (response.isSuccessful()) {
-                    if (response.body() != null)
-                        if (response.body().getBody() != null) {
-                            UserVo userVo = response.body().getBody();
-                            YunApplication.setmUserVo(userVo);
-                            YunApplication.setToken(userVo.getToken());
-                        }
-                }
-            }
-
-            @Override
-            public void onError
-                    (Call<BaseResponseVo<UserVo>> call, Response<BaseResponseVo<UserVo>> response) {
-
-            }
-
-            @Override
-            public void onFailure(Call<?> call, Throwable t) {
-
-            }
-        });
-    }
-
-    private void queryNetworks(){
+    private void queryNetworks() {
         RequestManager.instance().queryNetworks(new MinerCallback<BaseResponseVo<List<NetworkInfos>>>() {
             @Override
             public void onSuccess(Call<BaseResponseVo<List<NetworkInfos>>> call, Response<BaseResponseVo<List<NetworkInfos>>> response) {
-                if(response != null && response.isSuccessful()){
-                    if(response.body() != null){
+                if (response != null && response.isSuccessful()) {
+                    if (response.body() != null) {
                         YunApplication.setNetWorkInfo(response.body().getBody());
-                        if(TextUtils.isEmpty(SharedPreUtils.getString(MainActivity.this,SharedPreUtils.KEY_RPC_URL))){
+                        if (TextUtils.isEmpty(SharedPreUtils.getString(MainActivity.this, SharedPreUtils.KEY_RPC_URL))) {
                             initMainNet(response.body().getBody());
                         }
                     }
@@ -342,13 +278,13 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
         });
     }
 
-    private void initMainNet(List<NetworkInfos> networkInfos){
-        if(networkInfos != null && networkInfos.size() > 0){
-            for(int i = 0; i < networkInfos.size(); i++){
-                if(networkInfos.get(i).getTitle().equals("主网络")){
+    private void initMainNet(List<NetworkInfos> networkInfos) {
+        if (networkInfos != null && networkInfos.size() > 0) {
+            for (int i = 0; i < networkInfos.size(); i++) {
+                if (networkInfos.get(i).getTitle().equals("主网络")) {
                     List<NetworkInfos.ChainNetWork> mainChainWorks = networkInfos.get(i).getChain_networks();
-                    if(mainChainWorks != null && mainChainWorks.size() > 0){
-                        if(!TextUtils.isEmpty(mainChainWorks.get(0).getName())){
+                    if (mainChainWorks != null && mainChainWorks.size() > 0) {
+                        if (!TextUtils.isEmpty(mainChainWorks.get(0).getName())) {
                             YunApplication.NETWORK_RPC_URL = mainChainWorks.get(0).getRpc_url() + YunApplication.NETWORK_API_KEY;
                             YunApplication.NETWORK_CHAIN_ID = mainChainWorks.get(0).getChain_id();
                             return;
@@ -390,7 +326,6 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             if (mIsback) {
-                EventBus.getDefault().post(new com.upbest.arouter.EventBusMessageEvent(EventEntity.EVENT_FINISH, ""));
                 finish();
             } else {
                 //监听全屏视频时返回键
@@ -482,28 +417,6 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
 
     private void saveData() {
 
-        if (!TextUtils.isEmpty(Extras.Address)) {
-            SharedPreUtils.setString(this, SharedPreUtils.KEY_ADDRESS, Extras.Address);
-        }
-        if (!TextUtils.isEmpty(Extras.publicKey)) {
-            SharedPreUtils.setString(this, SharedPreUtils.KEY_PUBLICKEY, Extras.publicKey);
-        }
-        if (!TextUtils.isEmpty(Extras.seed)) {
-            SharedPreUtils.setString(this, SharedPreUtils.KEY_SEED, Extras.seed);
-        }
-        if (!TextUtils.isEmpty(Extras.nonce)) {
-            SharedPreUtils.setString(this, SharedPreUtils.KEY_NONCE, Extras.nonce);
-        }
-        if (!TextUtils.isEmpty(Extras.privateKey)) {
-            SharedPreUtils.setString(this, SharedPreUtils.KEY_PRIVATE, Extras.privateKey);
-        }
-        if (!TextUtils.isEmpty(Extras.pinCode)) {
-            SharedPreUtils.setString(this, SharedPreUtils.KEY_PIN, Extras.pinCode);
-            SharedPreUtils.setString(this, SharedPreUtils.KEY_ETH_WALLET_PWD, Extras.pinCode);
-        }
-        if (!TextUtils.isEmpty(Extras.mnemonic)) {
-            SharedPreUtils.setString(this, SharedPreUtils.KEY_MNENONIC, Extras.mnemonic);
-        }
     }
 
     ReceiverPushBean receiverPushBean;

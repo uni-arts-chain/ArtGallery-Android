@@ -35,7 +35,6 @@
 
         <TextView
             android:id="@+id/txt_aum_update_content"
-            style="@style/txt_333333_13"
             android:layout_width="210dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/txt_aum_update_version"
@@ -43,6 +42,8 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="15dp"
+            android:textSize="12sp"
+            android:textColor="@color/_101010"
             android:scrollbars="vertical" />
     </RelativeLayout>
 

@@ -36,7 +36,7 @@
             android:layout_marginEnd="30dp"
             android:includeFontPadding="false"
             android:text="助记词用于恢复钱包或重置钱包密码，将它准确的抄写到纸上，并存放在只有你知道的安全的地方。"
-            android:textColor="@color/colorHint" />
+            android:textColor="@color/_999999" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_mnemonic"

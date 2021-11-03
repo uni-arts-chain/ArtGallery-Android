@@ -51,8 +51,6 @@ import com.artgallery.ui.activity.PinCodeKtActivity;
 import com.artgallery.ui.activity.ShowNetBigImgActivity;
 import com.artgallery.ui.activity.user.CreateOrderActivity;
 import com.artgallery.ui.activity.user.MyHomePageActivity;
-import com.artgallery.ui.activity.user.SellArtActivity;
-import com.artgallery.ui.activity.user.SellArtUnCutActivity;
 import com.artgallery.ui.activity.user.UserHomePageActivity;
 import com.artgallery.utils.DateUtil;
 import com.artgallery.utils.DisplayUtils;
@@ -540,10 +538,10 @@ public class ArtDetailActivity extends BaseActivity<ActivityArtDetailBinding> im
         if (sellingArtVo.isIs_owner()) {
             if (sellingArtVo.getCollection_mode() == CAN_CUT) {
                 if ((sellingArtVo.getHas_amount() - sellingArtVo.getSelling_amount()) > 0) {
-                    Bundle bundle = new Bundle();
-                    bundle.putSerializable(SellArtActivity.ARTINFO, sellingArtVo);
-                    bundle.putBoolean("is_from_detail",true);
-                    startActivity(SellArtActivity.class, bundle);
+//                    Bundle bundle = new Bundle();
+//                    bundle.putSerializable(SellArtActivity.ARTINFO, sellingArtVo);
+//                    bundle.putBoolean("is_from_detail",true);
+//                    startActivity(SellArtActivity.class, bundle);
                 }
             } else {
                 if (sellingArtVo.getAasm_state().equals(SELLING)) {
@@ -552,10 +550,10 @@ public class ArtDetailActivity extends BaseActivity<ActivityArtDetailBinding> im
                     clickPosition = 0;
                     startActivityForResult(PinCodeKtActivity.class, 0);
                 } else {
-                    Bundle bundle = new Bundle();
-                    bundle.putSerializable(SellArtUnCutActivity.ARTINFO, sellingArtVo);
-                    bundle.putBoolean("is_from_detail",true);
-                    startActivity(SellArtUnCutActivity.class, bundle);
+//                    Bundle bundle = new Bundle();
+//                    bundle.putSerializable(SellArtUnCutActivity.ARTINFO, sellingArtVo);
+//                    bundle.putBoolean("is_from_detail",true);
+//                    startActivity(SellArtUnCutActivity.class, bundle);
                 }
             }
         } else {

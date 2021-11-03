@@ -12,7 +12,7 @@
         android:fitsSystemWindows="true">
 
 
-        <jp.co.soramitsu.feature_account_impl.presentation.pincode.view.PinCodeView
+        <com.artgallery.widget.PinCodeView
             android:id="@+id/pinCodeView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

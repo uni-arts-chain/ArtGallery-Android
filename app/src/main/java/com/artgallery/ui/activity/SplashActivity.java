@@ -1,47 +1,27 @@
 package com.artgallery.ui.activity;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.text.TextUtils;
 import android.view.WindowManager;
 
-import com.blankj.utilcode.util.CacheDiskStaticUtils;
 import com.artgallery.MainActivity;
 import com.artgallery.R;
 import com.artgallery.base.BaseActivity;
 import com.artgallery.constant.ExtraConstant;
 import com.artgallery.databinding.ActivitySplashBinding;
 import com.artgallery.utils.LoadOneTimeGifUtils;
+import com.blankj.utilcode.util.CacheDiskStaticUtils;
 
-/**
- * Synopsis     ${SYNOPSIS}
- * Author		Mosr
- * Version		${VERSION}
- * Create 	    2019.02.02 14:56
- * Email  		intimatestranger@sina.cn
- */
 public class SplashActivity extends BaseActivity<ActivitySplashBinding> implements LoadOneTimeGifUtils.GifListener {
+
     private String guide_flag;
-    private long default_time = 2000;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setTheme(R.style.SplashTheme);
     }
-
-    @SuppressLint("HandlerLeak")
-    private Handler handler = new Handler() {
-        @Override
-        public void handleMessage(Message msg) {
-            super.handleMessage(msg);
-            skipTomMain();
-        }
-    };
 
     @Override
     public int getLayoutId() {
@@ -55,15 +35,14 @@ public class SplashActivity extends BaseActivity<ActivitySplashBinding> implemen
     @Override
     public void initView() {
         guide_flag = CacheDiskStaticUtils.getString(ExtraConstant.KEY_GUIDE_FLAG);
-//        handler.sendEmptyMessageDelayed(0, default_time);
-        LoadOneTimeGifUtils.loadOneTimeGif(this,R.drawable.app_launch,mDataBinding.imgSplash,this);
+        LoadOneTimeGifUtils.loadOneTimeGif(this, R.drawable.app_launch, mDataBinding.imgSplash, this);
 
     }
 
     private void skipTomMain() {
+        overridePendingTransition(R.anim.boxing_fade_in, R.anim.boxing_fade_out);
         startActivity(TextUtils.equals("1", guide_flag) ? MainActivity.class : GuideActivity.class);
         SplashActivity.this.finish();
-        overridePendingTransition(R.anim.boxing_fade_in, R.anim.boxing_fade_out);
     }
 
     @Override

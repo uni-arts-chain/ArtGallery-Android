@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_line"
+    tools:parentTag="com.google.android.material.textfield.TextInputLayout">
+
+    <EditText
+        android:id="@+id/inputField"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:textSize="15sp"
+        android:background="@null"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="end|center_vertical"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textColor="@color/black" />
+
+</merge>

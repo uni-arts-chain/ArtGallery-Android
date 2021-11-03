@@ -6,6 +6,7 @@ import androidx.annotation.Nullable;
 
 import java.io.IOException;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 
 import okhttp3.MediaType;
 import okhttp3.RequestBody;
@@ -15,7 +16,7 @@ import okio.BufferedSink;
 public class RemoteRequestBody extends RequestBody {
 
     private static final MediaType mContentType = MediaType.parse("application/json; charset=utf-8");
-    private static final Charset mCharset = Util.UTF_8;
+    private static final Charset mCharset = StandardCharsets.UTF_8;
 
     private String mContent;
 

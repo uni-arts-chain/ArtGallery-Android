@@ -54,6 +54,17 @@
         android:theme="@style/AppTheme"
         tools:replace="android:theme">
         <activity
+            android:name="com.artgallery.ui.activity.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name="com.artgallery.ui.activity.order.AuctionOrderDetailActivity"
             android:screenOrientation="portrait" />
         <activity
@@ -69,19 +80,10 @@
             android:name="com.artgallery.ui.activity.OfferPriceListActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.artgallery.ui.activity.GoAuctionActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.artgallery.ui.activity.wallet.WithdrawActivity"
-            android:screenOrientation="portrait" />
-        <activity
             android:name="com.artgallery.ui.activity.CashAccountActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.artgallery.ui.activity.ZipFileSelectActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.artgallery.ui.activity.wallet.ImportWalletActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.artgallery.ui.activity.video.VideoPlayerActivity"
@@ -92,34 +94,16 @@
             android:name="com.artgallery.ui.activity.QrScanActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.artgallery.ui.activity.TransferActivity"
-            android:screenOrientation="portrait" />
-        <activity
             android:name="com.artgallery.ui.activity.UserAgreementActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.artgallery.ui.activity.PinCodeKtActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.artgallery.ui.activity.ETHPinCodeActivity"
-            android:screenOrientation="portrait" />
-        <activity
             android:name="com.artgallery.ui.activity.PinCodeActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.artgallery.ui.activity.wallet.ExportConfirmActivity"
-            android:screenOrientation="portrait" />
-        <activity
             android:name="com.artgallery.ui.x5.ExplorerWebViewActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.artgallery.ui.activity.wallet.ConfirmMnemonicActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.artgallery.ui.activity.wallet.BackUpActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.artgallery.ui.activity.wallet.WalletEditActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.artgallery.ui.activity.ShowNetBigImgActivity"
@@ -145,13 +129,7 @@
             android:name="com.artgallery.ui.x5.X5WebViewForAliPayActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.artgallery.ui.activity.user.SellArtUnCutActivity"
-            android:screenOrientation="portrait" />
-        <activity
             android:name="com.artgallery.ui.activity.NoticeInfoActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.artgallery.ui.activity.wallet.WalletSettingActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.artgallery.ui.activity.art.ShowLiveActivity"
@@ -164,9 +142,6 @@
             android:name="com.artgallery.ui.activity.blindbox.BlindBoxDetailActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.artgallery.ui.activity.user.SellArtActivity"
-            android:screenOrientation="portrait" />
-        <activity
             android:name="com.artgallery.ui.activity.user.UserHomePageActivity"
             android:screenOrientation="portrait" />
         <activity
@@ -174,9 +149,6 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="com.artgallery.ui.activity.user.CreateOrderForBlindBoxActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.artgallery.ui.activity.wallet.ExportActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.artgallery.ui.activity.SearchActivity"
@@ -201,9 +173,6 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="com.artgallery.ui.activity.AdviceActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.artgallery.ui.activity.wallet.AcountActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.artgallery.ui.activity.user.SettingsActivity"
@@ -282,21 +251,7 @@
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.artgallery.ui.activity.SplashActivity"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait"
-            android:theme="@style/SplashTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name="com.artgallery.ui.activity.GuideActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.artgallery.ui.activity.wallet.ExportKeystoreActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.artgallery.ui.activity.user.FollowAndFansActivity"
@@ -352,28 +307,29 @@
         <activity
             android:name="com.artgallery.ui.activity.ETHTransDetailActivity"
             android:screenOrientation="portrait" />
+
         <meta-data
             android:name="com.artgallery.utils.CustomGlideModule"
             android:value="AppGlideModule" />
 
-        <activity
-            android:name="jp.co.soramitsu.app.root.presentation.RootActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.Soramitsu.Fearless"
-            android:windowSoftInputMode="adjustResize" />
+        <!--        <activity-->
+        <!--            android:name="jp.co.soramitsu.app.root.presentation.RootActivity"-->
+        <!--            android:screenOrientation="portrait"-->
+        <!--            android:theme="@style/Theme.Soramitsu.Fearless"-->
+        <!--            android:windowSoftInputMode="adjustResize" />-->
 
-        <receiver
-            android:name="jp.co.soramitsu.feature_account_impl.presentation.exporting.json.confirm.ShareCompletedReceiver"
-            android:enabled="true"
-            android:exported="false"
-            tools:ignore="WrongManifestParent" />
+        <!--        <receiver-->
+        <!--            android:name="jp.co.soramitsu.feature_account_impl.presentation.exporting.json.confirm.ShareCompletedReceiver"-->
+        <!--            android:enabled="true"-->
+        <!--            android:exported="false"-->
+        <!--            tools:ignore="WrongManifestParent" />-->
 
-        <activity
-            android:name="com.journeyapps.barcodescanner.CaptureActivity"
-            android:screenOrientation="fullSensor"
-            android:theme="@style/Theme.Soramitsu.Fearless"
-            tools:ignore="WrongManifestParent"
-            tools:replace="android:theme,screenOrientation" />
+        <!--        <activity-->
+        <!--            android:name="com.journeyapps.barcodescanner.CaptureActivity"-->
+        <!--            android:screenOrientation="fullSensor"-->
+        <!--            android:theme="@style/Theme.Soramitsu.Fearless"-->
+        <!--            tools:ignore="WrongManifestParent"-->
+        <!--            tools:replace="android:theme,screenOrientation" />-->
 
         <service
             android:name="com.artgallery.service.DownLoadService"

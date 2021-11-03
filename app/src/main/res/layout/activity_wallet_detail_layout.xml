@@ -26,7 +26,7 @@
                     android:id="@+id/headLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/bg_wallet_head">
+                    android:background="@mipmap/bg_wallet_head">
 
                     <ImageView
                         android:id="@+id/img_setting"
@@ -35,7 +35,7 @@
                         android:layout_alignParentRight="true"
                         android:layout_marginTop="17dp"
                         android:layout_marginRight="34dp"
-                        android:background="@drawable/icon_shezhi" />
+                        android:background="@mipmap/icon_shezhi" />
 
                     <de.hdodenhof.circleimageview.CircleImageView xmlns:circleimageview="http://schemas.android.com/apk/res-auto"
                         android:id="@+id/imageview"
@@ -43,11 +43,11 @@
                         android:layout_height="60dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="40dp"
-                        android:src="@drawable/icon_default_head"
+                        android:src="@mipmap/icon_default_head"
                         circleimageview:civ_border_color="@color/white"
                         circleimageview:civ_border_overlay="false"
                         circleimageview:civ_border_width="3dp"
-                        circleimageview:civ_fill_color="@color/red" />
+                        circleimageview:civ_fill_color="@color/zfile_red" />
 
                     <TextView
                         android:id="@+id/name"
@@ -56,7 +56,6 @@
                         android:layout_below="@+id/imageview"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="20dp"
-                        android:text="@string/create_wallet_name_hint"
                         android:textColor="@color/white"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -74,7 +73,7 @@
                             android:id="@+id/addrtv"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/wallet_addr"
+                            android:text="钱包地址："
                             android:textColor="@color/white"
                             android:textSize="13sp"
                             android:textStyle="bold" />
@@ -86,7 +85,6 @@
                             android:ellipsize="middle"
                             android:gravity="center"
                             android:singleLine="true"
-                            android:text="@string/account_address"
                             android:textColor="@color/white"
                             android:textSize="13sp"
                             android:textStyle="bold" />
@@ -96,7 +94,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="50dp"
                             android:layout_marginLeft="10dp"
-                            android:drawableLeft="@drawable/icon_copy"
+                            android:drawableLeft="@mipmap/icon_copy"
                             android:paddingLeft="5dp"
                             android:paddingRight="5dp"
                             android:textColor="@color/white" />
@@ -106,7 +104,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="50dp"
                             android:layout_marginLeft="10dp"
-                            android:drawableLeft="@drawable/icon_qr"
+                            android:drawableLeft="@mipmap/icon_qr"
                             android:paddingLeft="5dp"
                             android:paddingRight="5dp"
                             android:textColor="@color/white" />
